@@ -123,6 +123,193 @@ User stories and features recorded and managed on [GitHub Projects](https://gith
 | As a **site user**, I would like to **be able to modify or delete a comment on a post** so that I can **make amendments** | **SHOULD HAVE** | 
 | As a **user**, I would like to **be able to access external links** so that I can **learn more about the topics in the posts** | **COULD HAVE** | 
 | As a **site admin**, I would like to **create, read, update, and delete posts** so that I can **can manage my blog content** | **MUST HAVE** | 
-    
+| As a **site admin**, I would like to **create draft posts** so that I can **so that I can finish writing content at a later date** | **SHOULD HAVE** | 
+| As a **user**, I would like to **filter the posts by category** so that I can **so that I can view posts on a category I am interested in** | **COULD HAVE** | 
+| As a **user**, I would like to **filter the posts by location** so that I can **so that I can view posts based on a particular location** | **COULD HAVE** | 
+| As a **user**, I would like to **learn what the posts are about** so that I can **so that I can understand the purpose of the website** | **SHOULD HAVE** |     
+| As a **site admin**, I would like to **create and update the about page content** so that I can **keep the page updated with the most relevant information** | **MUST HAVE** |  
+| As a **site user**, I would like to **be able to contact the site admin** so that I can **make a request to collaborate or make recomendations** | **COULD HAVE** |  
+| As a **site admin**, I would like to **be able to store contact requests** so that I can **review them at a later date** | **COULD HAVE** |  
 
+## Scope Plane
+
+As this would be a dual learning/building project using technologies that were new to me, such as Django, SQL, Bootstrap and Cloudinary, I was cautious to maintain consistent control over the scope of the project and not let my idea grow too big. I needed to lockdown my project features early on into manageable blocks so as not to lose track of the MVP. Following Agile Planning Methodologies, I added my User Stories as issues on my [GitHub Projects](https://github.com/users/Heath1979/projects/4) to keep the flow of the project in check.
+
+Essential features of my project were:
+- An accessible website that fulfils user needs
+- Responsive website for users of mobile, tablet and desktop devices
+- User Authentication
+- User profile creation and editing
+- Comment feature with full CRUD functionality
+- About me details to inform the user
+
+Planning my project thoroughly from the start allowed me to identify areas of importance for MVP completion and satisfaction of assessment criteria, and to balance them with the feasibility of the features.
+
+## Structural Plane
+
+From initial concept through to finished product I opted to use standard navigation elements to keep with the theme of familiarity. Bootstrap was used to help control the flexibility of the site across multiple screen sizes. 
+
+## Skeleton & Surface Planes
+
+### Wireframes
+
+The wireframes for Happy Heath were made using Balsamiq. I was sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for the Blog and About pages as all login and registration forms would be created by Allauth.
+
+**Mobile and Desktop views for:**
+ 
+- About
+- Paginated posts
+- Blog post
+
+<details open>
+  <summary>About Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_about.png">
+</details>  
+
+<details open>
+  <summary>Paginated posts Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_home.png">
+</details>
+
+<details open>
+  <summary>Blog posts Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_blog.png">
+</details>
+
+### Database Schema - Entity Relationship Dagram
+
+![ERD Image](documentation/wireframes/lucid_chart.png)
+*Database Schema (ERD) for Haappy Heath diaplaying relationships between feature components saved within the database*
+
+This Entity Relationship Diagram(ERD) demonstrates how each feature interacts with each other and the connected PostgreSQL Database. Using Django's User Model, and Django AllAuth to carry out all user authentication, a user_id is created when the user registers with their username and email. This allows the user to add and edit comments which will display their username. For future development users will be able to create their own blog posts and set comment approvals.
+
+The User, Post and Comments Models were inspired by the blog walkthrough by the Code Institute. This helped me to get a grasp of the templating structure and connected Python files.
+
+### Security
+
+A number of security steps were taken in this project in order to protect the user's submitted data. Unlike a strictly informative website, Happy Heath allows the user to become part of the community and interact with the posts. To meet the strict internet standards of protecting a user's data, the following processes were included in the project's development.
+
+**AllAuth**  
+
+Django AllAuth is an installable framework that takes care of the user registration and authentication process. Authentication was needed to determine when a user was registered or unregistered and it controlled who could add comments to the posts. The setup of AllAuth included:
+
+- installing it to my workspace dependencies
+- adding it to my INSTALLED_APPS in my settings.py
+- sourcing the AUTHENTICATION_BACKENDS from the AllAuth docs for my settings.py
+- adding its URL to my projects 'urls.py'
+- run database migrations to create the tables needed for AllAuth
+- (For this version of Happy Heath, to meet MVP, email and social accounts were not configured as part of the feedback/sign up options to the user.)
+  
+**Defensive Design**  
+
+Happy Heath was developed to ensure a smooth user experience, to the best of my current learning experience with Django. 
+
+- Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
+- Authentication processes control edit/delete icons to reveal them to the comment author only. 
+- Deletion of data is confirmed through an additional modal, double-checking with the user.
+- Testing and validation of features completes the process.
+
+**CSRF Tokens** 
+
+CSRF (Cross-Site Request Forgery) tokens are included in every form to help authenticate the request with the server when the form is submitted. Absence of these tokens can leave a site vulnerable to attackers who may steal a users data.
+  
+# Features
+
+## User View - Registered/Unregistered
+
+It was important to me from the beginning that Happy Heath be accessible to an unregistered user, in some capacity. I wanted the website to sell the idea of using local businesses to a new user quickly by immediately inviting them into the community through the blogs and comments sections. The following is a breakdown of the site's accessibility for registered/unregistered users:
+
+| Feature | Unregistered User | Registered, Logged-In User |
+|-----------|-------------------|-----------------|
+| About page | Visible | Visible |
+| Paginated blogs | Visible | Visible |
+| Blog post | Visible | Visible |
+| Comments | Visible but not able to add/amend | Visible with full feature interaction |
+
+## CRUD Functionality
+
+Users are able to Create, Read, Update and Delete their shared information on Happy Heath. Some features make full CRUD functionality available, whilst others present the necessary options only. Here is my CRUD breakdown for Happy Heath:
+
+| Feature | Create | Read | Update | Delete |
+|---------|--------|------|--------|--------|
+| Profile | Created upon registration | No | No | Full profile deletion is currently only available to Admin upon user account deletion |
+| Posts | By admin only | Yes | By admin only | By admin only |
+| Comments | Yes for registered users | Yes | Yes for registered users | Yes for registered users |
+
+## Feature showcase
+
+*For features showcase screenshots were taken on laptop*
+
+**Header/Navigation & Footer**
+
+<details open>
+  <summary>Header & Navigation - all users (laptop)</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+<details open>
+  <summary>Header & Navigation - all users (mobile)</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+<details open>
+  <summary>Footer - all users</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+**About Page**
+
+<details open>
+  <summary>About page - all users</summary>
+  <img src="documentation/final_views/">
+</details> 
+
+**Paginated Posts**
+
+<details open>
+  <summary>Paginated posts - all users</summary>
+  <img src="documentation/final_views/">
+</details> 
+
+**Blog Post**
+
+<details open>
+  <summary>Paginated posts - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Comments**
+
+<details open>
+  <summary>Comments - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Registration/Sign Up**
+
+<details open>
+  <summary>Registration - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Sign In**
+
+<details open>
+  <summary>Sign in - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Sign Out**
+
+<details open>
+  <summary>Sign out - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Admin Panel**
+
+<details open>
+  <summary>Admin panel</summary>
+  <img src="documentation/final_views/">
+</details>
 
