@@ -20,6 +20,16 @@ class Category(models.Model):
         return self.category
 
 
+class Location(models.Model):
+    """
+    Stores a location for each blog post
+    """
+    location = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.location
+
+
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:'auth.User'.
@@ -28,7 +38,9 @@ class Post(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts")
-    featured_image = CloudinaryField('image', default='placeholder')   
+    featured_image = CloudinaryField('image', default='placeholder')  
+    location = models.ForeignKey(Location,
+        on_delete=models.PROTECT, default=1, related_name="blog_location") 
     category = models.ForeignKey(Category, 
         on_delete=models.PROTECT, default=1, related_name="blog_category") 
     rating = models.IntegerField(choices=RATINGS, default=0)
