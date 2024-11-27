@@ -324,3 +324,4 @@ All content written for this site is purely for educational purposes. Actual bus
 
 ### **Media References**
 - [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
+- [Convertio](https://convertio.co/) for converting images stored in images folder to .webp.
