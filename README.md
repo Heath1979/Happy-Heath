@@ -313,3 +313,14 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
   <img src="documentation/final_views/">
 </details>
 
+
+
+## Credits
+
+### **Content References**
+All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
+- [Facebook](https://www.facebook.com) for Facebook business profiles.
+- [YouTube](https://www.youtube.com) for supporting videos on the advertised businesses. Credit to Visit Fylde Coast, 
+
+### **Media References**
+- [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
