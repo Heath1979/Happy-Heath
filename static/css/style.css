@@ -170,3 +170,18 @@ footer {
     color: rgb(222, 146, 168);
 }
 
+.happy {
+    background-color: #99775C;
+    color: #02020A;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.about-content {
+    background-color: #EAE7DD;
+    padding: 5px;
+}
+
+.submit-btn {
+    background-color: #156064;
+}
