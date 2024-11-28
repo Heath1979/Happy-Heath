@@ -313,6 +313,12 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
   <img src="documentation/final_views/">
 </details>
 
+## Future Features
+
+- **Social account login**: Allowing popular social account login to the Happy Heath site will speed up the registration and booking process.
+- **Business pages**: Allow for businesses to sign up and advertise. Create a safe space for interaction between businesses and customers.
+- **Member to business contact**: Customers can send direct messages to businesses through the website.
+- **Add picture gallery to posts**: Allows the community to post images that will support the good work of the business that is the topic of the post.
 
 
 ## Credits
