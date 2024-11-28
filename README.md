@@ -331,7 +331,6 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
 - [Gitpod](https://www.gitpod.io) as an online, cloud-based IDE for development.
 - Blasamiq for design planning and wireframes.
-- [Lucid](https://lucidchart.com) for creating the ERD.
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the FreeFido application.
@@ -340,7 +339,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 ## Libraries & Frameworks
 
-- Bootstrap v.
+- Bootstrap v.5.0.1
 - Cloudinary v.1.41.0
 - Crispy Bootstrap5 v.0.7
 - Django v.4.2.16
@@ -350,6 +349,15 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 Further information is available in the [requirements.txt file](rquirements.txt)
 
+## Tools & Programs
+
+- [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
+- [Lucid](https://lucidchart.com) for creating the ERD.
+- [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and models and explaining the relationships.
+
+# Testing
+
+- for all testing please refer to the [TESTING.md](TESTING.md) file.
 
 ## Credits
 
@@ -360,4 +368,3 @@ All content written for this site is purely for educational purposes. Actual bus
 
 ### **Media References**
 - [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
-- [Convertio](https://convertio.co/) for converting images stored in images folder to .webp.
