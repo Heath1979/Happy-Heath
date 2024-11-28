@@ -32,3 +32,5 @@ Return back to the [README.md](README.md) file.
 | No. | Bug | Solved | Fix | Commit no. |
 | --- | ---- | ----- | --- | ---------- |
 | 1 | Comments not showing when full post opened up | Yes | Added approved line to Comments modal | 6b172b3 |
+| 2 | Blog for Harle.tech post had a white backing not aligned to rest of blog posts | Yes | Content had been copied in from a doc and imported backing with it. Re-wrote to clear | de78ee1 |
+

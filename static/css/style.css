@@ -71,8 +71,8 @@ footer {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #99775C;
+    color: #02020A;
     position: relative;
 }
 
@@ -82,17 +82,19 @@ footer {
 }
 
 .masthead-image:after {
-    content: "";
+    object-fit: cover;
     position: absolute;
     top: 0;
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    background: #02020A;
+    z-index: -100;
+}
+
+.card-text {
+    background-color: #EAE7DD;
+    padding: 5px;
 }
 
 .profile-image {
@@ -116,7 +118,7 @@ footer {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #02020A;
 }
 
 .btn-signup,

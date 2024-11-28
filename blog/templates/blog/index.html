@@ -27,6 +27,8 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
+                                <h4>Based in {{ post.location }}</h4>
+                                <h4>Category: {{ post.category }}</h4>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
