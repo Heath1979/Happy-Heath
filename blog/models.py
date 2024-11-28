@@ -33,6 +33,8 @@ class Location(models.Model):
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:'auth.User'.
+    category related to :model:'Category.category'.
+    location related to :model:'Location.location'.
     """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)

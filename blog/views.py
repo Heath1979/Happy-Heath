@@ -9,6 +9,10 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """ 
+    Display all published posts in blog/index.html 
+    and set number of posts per page.
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 6

@@ -95,6 +95,10 @@ footer {
     z-index: 100;
 }
 
+.profile-image {
+    width: 75%;
+}
+
 .post-link {
     text-decoration: none;
     color: #02020A;
