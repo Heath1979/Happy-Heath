@@ -51,9 +51,9 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
-    social_links = models.URLField(max_length=200, blank=True,)
-    web_links = models.URLField(max_length=200, blank=True)
-    video_links = models.URLField(max_length=200, blank=True)
+    social_links = models.URLField(max_length=200, blank=True, default='https://example.com')
+    web_links = models.URLField(max_length=200, blank=True, default='https://example.com')
+    video_links = models.URLField(max_length=200, blank=True, default='https://example.com')
 
     class Meta:
         ordering = ["-created_on"]
