@@ -319,6 +319,36 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 - **Business pages**: Allow for businesses to sign up and advertise. Create a safe space for interaction between businesses and customers.
 - **Member to business contact**: Customers can send direct messages to businesses through the website.
 - **Add picture gallery to posts**: Allows the community to post images that will support the good work of the business that is the topic of the post.
+- **User profile**: Users can view a profile and amend as required.
+- **Notifications**: Users receive some form of notification when new posts are created. Notifications can be set in a user profile.
+
+# Technologies & Languages used
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- [Github](https://www.github.com) used for online storage of codebase and Projects tool.
+- [Gitpod](https://www.gitpod.io) as an online, cloud-based IDE for development.
+- Blasamiq for design planning and wireframes.
+- [Lucid](https://lucidchart.com) for creating the ERD.
+- [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
+- [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
+- [Heroku](https://www.heroku.com) was used to host the FreeFido application.
+- [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
+- PostgreSQL database required to collect and recall users data supplied by the Code Institute.
+
+## Libraries & Frameworks
+
+- Bootstrap v.
+- Cloudinary v.1.41.0
+- Crispy Bootstrap5 v.0.7
+- Django v.4.2.16
+- Django AllAuth v.0.57.2
+- Django Crispy Forms v.2.3
+- Django Summernote v.0.8.20.0
+
+Further information is available in the [requirements.txt file](rquirements.txt)
 
 
 ## Credits
