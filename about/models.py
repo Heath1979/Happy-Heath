@@ -18,6 +18,9 @@ class About(models.Model):
 
 
 class CollaborateRequest(models.Model):
+    """ 
+    stores instances where a user has filled out the Contact Form
+    """
     name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField()
