@@ -92,6 +92,20 @@ footer {
     z-index: -100;
 }
 
+.hide {
+    display: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: xx-large;
+}
+
+.social-links {
+    color: #02020A;
+}
+
 .card-text {
     background-color: #EAE7DD;
     padding: 5px;
@@ -114,6 +128,11 @@ footer {
 .post-title {
     margin-top: 5%;
     margin-left: 5%;
+}
+
+.post-location {
+    margin-left: 5%;
+    color: #02020A;
 }
 
 .post-subtitle {
