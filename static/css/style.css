@@ -101,16 +101,31 @@ footer {
 .post-title {
     margin-top: 5%;
     margin-left: 5%;
+    margin-bottom: 0;
 }
 
 .post-location {
     margin-left: 5%;
+    margin-bottom: 0;
     color: #02020A;
 }
 
 .post-subtitle {
     margin-left: 5%;
     color: #02020A;
+}
+
+.comment-author {
+    background-color: #99775C;
+}
+
+.comment-post {
+    background-color: #EAE7DD;
+    padding: 5px;
+}
+
+.posting-as {
+    background-color: #99775C;
 }
 
 /* styles for about.html */
@@ -137,6 +152,7 @@ footer {
 .btn-edit {
     background-color: #156064;
     color: #fff;
+    margin-top: 5px;
 }
 
 .btn-signup:hover,
@@ -159,6 +175,7 @@ footer {
 .btn-delete {
     color: #fff;
     background: #D9730d;
+    margin-top: 5px;
 }
 
 .faded {
