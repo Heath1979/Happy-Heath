@@ -14,7 +14,7 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
 
 ## Table of Contents
 
-- [Happy Heath](#Happy Heath)
+- [Happy Heath](#happy-heath)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -50,9 +50,10 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
   - [PostgreSQL from Code Institute](#postgreSQL-from-code-institute)
   - [Heroku deployment](#heroku-deployment)
 - [Credits](#credits)
+  - [Content References](#content-references)
+  - [Media Refernces](#media-references)
   - [Code](#code)
   - [Media](#media)
-    - [Additional reading/tutorials/books/blogs](#additional-readingtutorialsbooksblogs)
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
@@ -177,7 +178,7 @@ The wireframes for Happy Heath were made using Balsamiq. I was sure of the struc
 ### Database Schema - Entity Relationship Dagram
 
 ![ERD Image](documentation/wireframes/lucid_chart.png)
-*Database Schema (ERD) for Haappy Heath diaplaying relationships between feature components saved within the database*
+*Database Schema (ERD) for Happy Heath diaplaying relationships between feature components saved within the database*
 
 This Entity Relationship Diagram(ERD) demonstrates how each feature interacts with each other and the connected PostgreSQL Database. Using Django's User Model, and Django AllAuth to carry out all user authentication, a user_id is created when the user registers with their username and email. This allows the user to add and edit comments which will display their username. For future development users will be able to create their own blog posts and set comment approvals.
 
@@ -489,3 +490,12 @@ The following sites complemented my learning for this project alongside the [Cod
 
 - [Geeksforgeeks](https://www.geeksforgeeks.org/) for setting a plaveholder in a URLField
 - [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
+
+## Acknowledgements
+
+- Thank you to my learning facilitator Amy Richardson, SME Mark Briscoe, and Coding Coach John Reardon for the continued aid and support throughout this project.
+- A shout out for the 2024 Lancs Bootcamp cohort who have served to be a source of inspiration and help throughout my time on this course. To have been able to work through this bootcamp with them has been an absolute pleasure.
+- To my wonderful partner Jolene who is the inspiration behind everything that I do. I think she may deserve that trip to Katies in Fleetwood.
+- Finally I would like to acknowledge the part of John Feeney as an inspiration behind this project. He coined the phrase 'Happy Heath or a Grumpy Croasdale' and its only through the example of his life that I always strive to be a 'Happy Heath'.
+
+![John and I](documentation/final_views/john-and-I.png)
