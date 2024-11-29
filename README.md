@@ -362,6 +362,7 @@ Further information is available in the [requirements.txt file](rquirements.txt)
 ## Credits
 
 ### **Content References**
+
 All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
 - [Facebook](https://www.facebook.com) for Facebook business profiles.
 - [YouTube](https://www.youtube.com) for supporting videos on the advertised businesses. Credit to Visit Fylde Coast, 
@@ -371,3 +372,10 @@ All content written for this site is purely for educational purposes. Actual bus
 - [Notionavenue](https://www.notionavenue.co/) for hex color code for comments delete button.
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
 - [AWeber](https://blog.aweber.com/) for advice on fonts used for a blog site.
+
+### **Code**
+
+The following sites complemented my learning for this project alongside the [Code Institute's](https://codeinstitute.net/ie/) learning content.
+
+- [Geeksforgeeks](https://www.geeksforgeeks.org/) for setting a plaveholder in a URLField
+- [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
