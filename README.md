@@ -368,3 +368,6 @@ All content written for this site is purely for educational purposes. Actual bus
 
 ### **Media References**
 - [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
+- [Notionavenue](https://www.notionavenue.co/) for hex color code for comments delete button.
+- [Coolers](https://coolors.co/) for color generator used for pallette for the site.
+- [AWeber](https://blog.aweber.com/) for advice on fonts used for a blog site.
