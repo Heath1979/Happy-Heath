@@ -29,6 +29,16 @@ footer {
     padding: 5px;
 }
 
+.title-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .my-social {
     color: #02020A;
     padding-left: 5px;
@@ -44,21 +54,6 @@ footer {
 
 .image-container {
     position: relative;
-}
-
-.rating {
-    margin-bottom: 8px;
-    background-color: #99775C;
-}
-
-.happy-rating {
-    font-size: x-large;
-    color: yellow;
-}
-
-.grumpy-rating {
-    font-size: x-large;
-    color: #156064;
 }
 
 .post-link {
