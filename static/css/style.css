@@ -29,6 +29,12 @@ footer {
     padding: 5px;
 }
 
+.my-social {
+    color: #02020A;
+    padding-left: 5px;
+    font-size: large;
+}
+
 /* styles for index.html */
 
 .card {
@@ -40,6 +46,21 @@ footer {
     position: relative;
 }
 
+.rating {
+    margin-bottom: 8px;
+    background-color: #99775C;
+}
+
+.happy-rating {
+    font-size: x-large;
+    color: yellow;
+}
+
+.grumpy-rating {
+    font-size: x-large;
+    color: #156064;
+}
+
 .post-link {
     text-decoration: none;
     color: #02020A;
@@ -47,7 +68,7 @@ footer {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #D9730d;
 }
 
 /* style for post_detail.html */
