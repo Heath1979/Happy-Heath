@@ -355,6 +355,7 @@ Further information is available in the [requirements.txt file](rquirements.txt)
 - [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and models and explaining the relationships.
 - [LogoDesign](https://logodesign.ai/) for generating brand logo to be used as the Favicon.
 - [Favicon](https://favicon.io/) to create favicon.
+- [Image resizer](https://imageresizer.com/) to resize avatar images to thumbnails.
 
 # Testing
 

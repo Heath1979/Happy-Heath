@@ -24,13 +24,13 @@
                             </div>
                             <div class="card-text">
                                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                        <h2 class="card-title">{{ post.title }}</h2>
-                                    </a>
+                                        <h2 class="card-title">{{ post.title }}<span></span></h2></a>
                                     {% if post.rating == 0 %}
-                                    <h4 class="rating">This makes me <span class="happy-rating"><i class="fa-solid fa-face-smile"></i></span></h4>
+                                    <img src="{% static 'images/happy-avatar.webp' %}" alt="happy avatar">
                                     {% else %}
-                                    <h4 class="rating">This makes me <span class="grumpy-rating"><i class="fa-solid fa-face-tired"></i></span></h4>
+                                    <img src="{% static 'images/grumpy.webp' %}" alt="grumpy avatar">
                                     {% endif %}
+                                </span></h2></a>
                                 <h4>Based in {{ post.location }}</h4>
                                 <h4>Category: {{ post.category }}</h4>
                                 <p>{{ post.excerpt }}</p>

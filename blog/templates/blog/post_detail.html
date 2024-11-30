@@ -13,17 +13,20 @@
         <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
        <div class="socials">
           {% if "https://example.com" in post.social_links %}
+          <!-- prevents <a> showing when no valid URL present -->
           {% else %}
           <a class="social-links" href="{{ post.social_links }}" aria-label="link to facebook page" target="_blank">
             <i class="fa-brands fa-square-facebook"></i>
           </a>
           {% endif %}
+          <!-- prevents <a> showing when no valid URL present -->
           {% if "https://example.com" in post.web_links %}
           {% else %}
           <a class="social-links" href="{{ post.web_links }}" aria-label="link to website" target="_blank">
             <i class="fa-solid fa-globe"></i>
           </a>
           {% endif %}
+          <!-- prevents <a> showing when no valid URL present -->
           {% if "https://example.com" in post.video_links %}
           {% else %}
           <a class="social-links" href="{{ post.video_links }}" aria-label="link supporting youtube video" target="_blank">
