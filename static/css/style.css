@@ -24,6 +24,14 @@ footer {
     background-color: #99775C;
 }
 
+.my-social {
+    color: #02020A;
+    padding-left: 5px;
+    font-size: large;
+}
+
+/* styles for index.html */
+
 .card-text {
     background-color: #EAE7DD;
     padding: 5px;
@@ -38,14 +46,6 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
-
-.my-social {
-    color: #02020A;
-    padding-left: 5px;
-    font-size: large;
-}
-
-/* styles for index.html */
 
 .card {
     border: none;
