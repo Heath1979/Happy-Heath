@@ -27,6 +27,18 @@ Return back to the [README.md](README.md) file.
 
 ### HTML Validation
 
+For my HTML files I have used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+Due to using Jinja syntax such as '{% extends "base.html" %} I had to use a different approach to checking my HTML as the validator would show errors if copying the HTML direct from the files in the Happy Heath project. My method to check my HTML was as follows:
+
+- Using the deployed version from Heroku I navigated to each page.
+- Right clicking on the page brought up a options menu with the option to view the page source located at the bottom.
+- The complete HTML code for that page will then appear in a separate window.
+- Copy that code and paste into the [validate by input](https://validator.w3.org/#validate_by_input) option.
+- Check for errors and warnings, fix any issues, and then repeat the steps to revalidate.
+
+
+
 ## Bugs
 
 | No. | Bug | Solved | Fix | Commit no. |

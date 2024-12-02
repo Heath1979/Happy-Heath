@@ -8,6 +8,10 @@ nav {
     background-color: #99775C;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .support {
     color: #02020a;
 }
