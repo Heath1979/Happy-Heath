@@ -35,5 +35,7 @@ Return back to the [README.md](README.md) file.
 | 2 | Blog for Harle.tech post had a white backing not aligned to rest of blog posts | Yes | Content had been copied in from a doc and imported backing with it. Re-wrote to clear | 3f31836 |
 | 3 | Image and content disappeared on Harle.tech post after weblinks implemented | Yes | changed default tag for no available url to a <p> from <a> | 39a32d7 |
 | 4 | Favicon not loading | Yes | Missed % at the end of the DTL tag | 54faba0 |
+| 5 | Search functionality for posts caused site to crash | Yes | Function in views did not take into account that category and location are foreign keys | 63459b9 |
+
 
 
