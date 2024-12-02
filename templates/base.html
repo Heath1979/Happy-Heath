@@ -18,7 +18,7 @@
     <meta name="author" content="Heath1979">
 
     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
 
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,8 +41,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><i
-                        class="fa-solid fa-face-smile"></i> Happy Heath <i class="fa-solid fa-face-smile"></i></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><i class="fa-solid fa-face-smile"></i>
+                    Happy Heath <i class="fa-solid fa-face-smile"></i></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -96,17 +96,17 @@
     <main class="flex-shrink-0 main-bg">
         <div class="search">
             {% if request.path == home_url %}
-        <form role="search" action="{% url 'home' %}">
-            <input name="q" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-edit" type="submit">Search</button>
-        </form>
-        {% endif %}
-        {% if user.is_authenticated %}
-        <p>You are logged in as {{ user }}</p>
-        {% else %}
-        <p>You are not logged in</p>
-        {% endif %}
-    </div>
+            <form role="search" action="{% url 'home' %}">
+                <input id="search" name="q" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn-edit" type="submit">Search</button>
+            </form>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <p>You are logged in as {{ user }}</p>
+            {% else %}
+            <p>You are not logged in</p>
+            {% endif %}
+        </div>
 
         {% block content %}
         <!-- Content Goes here -->
@@ -117,13 +117,13 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center">Copyright 2024 Heath1979</p>
-        <p class="m-0 text-center">Follow me: 
-            <a class="my-social" href="https://www.facebook.com/zippybutt" aria-label="link to my facebook page" target="_blank"><i
-                class="fa-brands fa-square-facebook"></i></a>
-            <a class="my-social" href="https://www.linkedin.com/in/heath-croasdale/" aria-label="link to my linkedin page" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>    
-            <a class="my-social" href="https://github.com/Heath1979" aria-label="link to my github page" target="_blank"><i
-                class="fa-brands fa-github"></i></a>     
+        <p class="m-0 text-center">Follow me:
+            <a class="my-social" href="https://www.facebook.com/zippybutt" aria-label="link to my facebook page"
+                target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="my-social" href="https://www.linkedin.com/in/heath-croasdale/"
+                aria-label="link to my linkedin page" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="my-social" href="https://github.com/Heath1979" aria-label="link to my github page"
+                target="_blank"><i class="fa-brands fa-github"></i></a>
         </p>
         <p class="m-0 text-center">Disclaimer: this content is for educational purposes only.</p>
     </footer>
@@ -132,6 +132,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/10a6abd139.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/search.js' %}"></script>
     {% block extras %}
     {% endblock %}
 </body>

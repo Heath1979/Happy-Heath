@@ -314,7 +314,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 ## Future Features
 
-- **Social account login**: Allowing popular social account login to the Happy Heath site will speed up the registration and booking process.
+- **Social account login**: Allowing popular social account login to the Happy Heath site will speed up the registration process.
 - **Business pages**: Allow for businesses to sign up and advertise. Create a safe space for interaction between businesses and customers.
 - **Member to business contact**: Customers can send direct messages to businesses through the website.
 - **Add picture gallery to posts**: Allows the community to post images that will support the good work of the business that is the topic of the post.
@@ -491,6 +491,8 @@ The following sites complemented my learning for this project alongside the [Cod
 
 - [Geeksforgeeks](https://www.geeksforgeeks.org/) for setting a plaveholder in a URLField
 - [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
+- [KenBro Tech](https://www.youtube.com/@KenBroTech) for tutorials on creating a search function.
+- [Dee Mc](https://www.youtube.com/@IonaFrisbee) for easy to follow Django walkthrough.
 
 ## Acknowledgements
 
