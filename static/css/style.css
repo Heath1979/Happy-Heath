@@ -74,6 +74,7 @@ footer {
 
 .post-link:hover,
 .page-link {
+    background-color: #156064;
     color: #D9730d;
 }
 
