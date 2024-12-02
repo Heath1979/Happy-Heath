@@ -26,8 +26,8 @@ class PostList(generic.ListView):
         if query:
             queryset = queryset.filter(
                 Q(title__icontains=query) |
-                Q(category__icontains=query) |
-                Q(location__icontains=query)
+                Q(category__category__icontains=query) |
+                Q(location__location__icontains=query)
             )
         return queryset
        
