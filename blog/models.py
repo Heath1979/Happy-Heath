@@ -12,7 +12,10 @@ class Category(models.Model):
     Stores a catogory for each blog post
     """
     category = models.CharField(max_length=50)
-
+    """
+    Meta class to show correct plural name
+    """
+    
     class Meta:
         verbose_name_plural = "categories"
 

@@ -94,11 +94,19 @@
         </div>
     </div>
     <main class="flex-shrink-0 main-bg">
+        <div class="search">
+            {% if request.path == home_url %}
+        <form class="text-start m-3" role="search" action="{% url 'home' %}">
+            <input name="q" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+        {% endif %}
         {% if user.is_authenticated %}
         <p class="text-end m-3">You are logged in as {{ user }}</p>
         {% else %}
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
+    </div>
 
         {% block content %}
         <!-- Content Goes here -->

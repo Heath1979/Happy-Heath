@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.db.models import Q
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -13,10 +14,24 @@ class PostList(generic.ListView):
     Display all published posts in blog/index.html 
     and set number of posts per page.
     """
-    queryset = Post.objects.filter(status=1)
+    model = Post
     template_name = "blog/index.html"
     paginate_by = 6
-
+    """
+    enable search functionality
+    """
+    def get_queryset(self):
+        queryset = Post.objects.filter(status=1)
+        query = self.request.GET.get('q')
+        if query:
+            queryset = queryset.filter(
+                Q(title__icontains=query) |
+                Q(category__icontains=query) |
+                Q(location__icontains=query)
+            )
+        return queryset
+       
+        
 
 def post_detail(request, slug):
     """
