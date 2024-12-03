@@ -48,6 +48,7 @@ Due to using Jinja syntax such as '{% extends "base.html" %} I had to use a diff
 | 3 | Image and content disappeared on Harle.tech post after weblinks implemented | Yes | changed default tag for no available url to a <p> from <a> | 39a32d7 |
 | 4 | Favicon not loading | Yes | Missed % at the end of the DTL tag | 54faba0 |
 | 5 | Search functionality for posts caused site to crash | Yes | Function in views did not take into account that category and location are foreign keys | 63459b9 |
+| 6 | add_post.html not loading for a logged in user on the post link | Yes | blogs/urls.py pathways needed to be re-ordered. Path to the page was initially added at the bottom of the list when should have been second in the list | 
 
 
 
