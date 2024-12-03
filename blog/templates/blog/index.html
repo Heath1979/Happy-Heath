@@ -25,9 +25,9 @@
                                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                         <h2 class="card-title title-rating">{{ post.title }}<span class="rating">
                                     {% if post.rating == 0 %}
-                                    <img src="{% static 'images/happy-avatar.webp' %}" alt="happy avatar">
+                                    <img src="{% static 'images/happy-avatar.webp' %}" alt="happy avatar and link to post detail">
                                     {% else %}
-                                    <img src="{% static 'images/grumpy.webp' %}" alt="grumpy avatar">
+                                    <img src="{% static 'images/grumpy.webp' %}" alt="grumpy avatar and link to post detail">
                                     {% endif %}
                                 </span></h2></a>
                                 <h4>Based in {{ post.location }}</h4>
