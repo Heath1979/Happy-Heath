@@ -39,7 +39,7 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg dark-bg">
         <div class="container-fluid">
             <!--<a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><i class="fa-solid fa-face-smile"></i>
                     Happy Heath <i class="fa-solid fa-face-smile"></i></span></a>-->
@@ -95,13 +95,14 @@
     </div>
     <main class="flex-shrink-0 main-bg">
         <div class="brand-head">
-        <h1 class="main-head"><img src="{% static 'images/happy-avatar.webp' %}" alt="happy avatar">..Happy Heath..<img
-                src="{% static 'images/grumpy.webp' %}" alt="grumpy avatar"></h1>
-        </div>        
+            <h1 class="main-head"><img src="{% static 'images/happy-avatar.webp' %}" alt="happy avatar">..Happy
+                Heath..<img src="{% static 'images/grumpy.webp' %}" alt="grumpy avatar"></h1>
+        </div>
         <div class="search">
             {% if request.path == home_url %}
             <form role="search" action="{% url 'home' %}">
-                <input id="search" name="q" type="search" placeholder="Search" aria-label="Search" role="search">
+                <input id="search" name="q" type="search" placeholder="Search"
+                    aria-label="Search function to filter posts by title, location, or category" role="search">
                 <button class="btn-edit" type="submit">Search</button>
             </form>
             {% endif %}
