@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
+{% block title %}{{ post.title }}{% endblock %}
 {% load crispy_forms_tags %}
 
 <div class="masthead">
@@ -36,13 +37,15 @@
         </div> 
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
+        <div class="scale">
         {% if "placeholder" in post.featured_image.url %}
-        <img src="{% static 'images/default.webp' %}" class="scale"
+        <img src="{% static 'images/default.webp' %}" class="img-fluid"
           alt="placeholder image">
         {% else %}
-        <img src="{{ post.featured_image.url }}" class="scale"
+        <img src="{{ post.featured_image.url }}" class="img-fluid"
           alt="{{ post.title }}">
         {% endif %}
+      </div>
       </div>
     </div>
   </div>
