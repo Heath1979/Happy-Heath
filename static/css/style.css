@@ -23,7 +23,7 @@ nav {
 }
 
 .support {
-    color: #02020a;
+    color: #000;
     font-weight: 600;
 }
 
@@ -97,7 +97,8 @@ footer {
 .post-link:hover,
 .page-link {
     background-color: #156064;
-    color: #D9730d;
+    color: #fff;
+    font-weight: bolder;
 }
 
 /* style for post_detail.html */
