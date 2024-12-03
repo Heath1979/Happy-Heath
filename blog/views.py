@@ -1,10 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
+from django.views.generic import CreateView
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.db.models import Q
 from .models import Post, Comment
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 
 # Create your views here.
 
@@ -129,3 +130,17 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class AddPost(CreateView):
+    """ 
+    Add create post view
+    """
+    template_name = 'blog/add_post.html'
+    model = Post
+    form_class = PostForm
+    success_url = '/blog/'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super(AddPost, self).form_valid(form)
