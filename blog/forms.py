@@ -1,4 +1,6 @@
 from django import forms
+from django_summernote.widgets import SummernoteWidget
+from django.utils.text import slugify
 from .models import Comment, Post
 
 
@@ -26,6 +28,10 @@ class PostForm(forms.ModelForm):
             "video_links",
         ]
 
+        widgets = {
+            'content': SummernoteWidget(),
+        }
+        
         labels = {
             "title": "Business name.",
             "featured_image": "Featured image.",
@@ -38,6 +44,14 @@ class PostForm(forms.ModelForm):
             "web_links": "Business Website",
             "video_links": "Supporting YouTube channel or video.",
         }
+
+    def save(self, commit=True):
+        instance = super(PostForm, self).save(commit=False)
+        instance.slug = slugify(instance.title)
+        if commit:
+            instance.save()
+        return instance    
+
 
 class CommentForm(forms.ModelForm):
     """
