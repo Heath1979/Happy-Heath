@@ -3,7 +3,8 @@ from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
-    path('', views.PostList.as_view(), name='home'),
+    path('', TemplateView.as_view(template_name='blog/home.html'), name='home'),
+    path('blog/', views.PostList.as_view(), name='blog'),
     path('add_post/', views.AddPost.as_view(), name='add_post'),  
     path('await-approval/', TemplateView.as_view(template_name='blog/await_approval.html'), name='await_approval'),
     path('delete_post/<slug:slug>/', views.DeletePost.as_view(), name='delete_post'),
