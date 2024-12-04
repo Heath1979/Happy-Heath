@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="container">
-    <form method="POST" enctype="multipart/form-data" class="p-2">
+    <form method="POST" enctype="multipart/form-data" class="p-2 post-form">
         <h1 class="test-center">Add Post</h1>
         {% csrf_token %}
         {{ form|crispy }}
