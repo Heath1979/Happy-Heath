@@ -203,9 +203,26 @@ footer {
     color: #fff;
 }
 
+.approval-p {
+    color: #02020A;
+    font-weight: 600;
+}
+
 .image-div {
     display: flex;
     justify-content: center;
+    padding: 10px;
+}
+
+/* delete page */
+
+.warning {
+    color: red;
+}
+
+.cancel {
+    color: #02020A;
+    font-weight: 600;
 }
 
 /* button styles */
@@ -217,10 +234,22 @@ footer {
     margin-top: 5px;
 }
 
+.btn-delete-post {
+    color: #fff;
+    background-color: #D9730d;
+    margin-top: 5px;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
     color: #156064;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: red;
+    margin-top: 5px;
 }
 
 .link {
@@ -236,7 +265,7 @@ footer {
 
 .btn-delete {
     color: #fff;
-    background: #D9730d;
+    background-color: #D9730d;
     margin-top: 5px;
 }
 
