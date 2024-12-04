@@ -6,6 +6,7 @@
 {% block content %}
 
 <div class="container">
+    <div class="form-container">
     <form method="POST" enctype="multipart/form-data" class="p-2 post-form">
         <h1 class="text-center">Edit Post</h1>
         {% csrf_token %}
@@ -14,6 +15,7 @@
             <button type="submit" class="btn btn-edit">Confirm changes</button>
         </div>
     </form>
+</div>
 </div>
 
 {% endblock %}

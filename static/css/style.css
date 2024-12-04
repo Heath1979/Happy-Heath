@@ -214,6 +214,20 @@ footer {
     padding: 10px;
 }
 
+/* edit post page */
+
+.form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+form {
+    width: 50%; 
+    max-width: 600px; 
+}
+
 /* delete page */
 
 .warning {
