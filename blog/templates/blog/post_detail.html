@@ -68,7 +68,7 @@
   {% if request.user == post.author %} 
                 <div class="text-center">
                     <a href="{% url 'edit_post' post.slug %}" class="btn btn-edit">Edit</a>
-                   
+                    <a href="{% url 'delete_post' post.slug %}" class="btn btn-edit">Delete</a>
                 </div>
                 {% endif %}
   <!-- Displaying count of comments -->

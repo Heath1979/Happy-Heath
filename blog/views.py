@@ -169,3 +169,22 @@ class EditPost(LoginRequiredMixin, UserPassesTestMixin,
 
     def get_success_message(self, cleaned_data):
         return self.success_message % {'title': self.object.title}  
+
+
+class DeletePost(LoginRequiredMixin, UserPassesTestMixin,
+    generic.DeleteView):
+    """ 
+    Add delete post view
+    """
+    template_name = 'blog/delete_post.html'
+    model = Post
+    success_url = reverse_lazy('home')
+
+    def test_func(self):
+        post = self.get_object()
+        return self.request.user == post.author
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['post'] = self.get_object()  
+        return context    

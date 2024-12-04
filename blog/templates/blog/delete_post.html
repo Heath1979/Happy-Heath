@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Delete post{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center">Delete Post</h1>
+<p class="text-center">Are you sure you want to delete "{{ post.title }}"? Once confirmed this action can not be undone.</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm Delete</button>
+</form>
+<a href="{% url 'home' %}">Cancel</a>
+<div class="image-div">
+    <img src="{% static 'images/grumpy-big.webp' %}" alt="big grumpy croasdale">
+</div>
+</div>
+
+{% endblock %}
