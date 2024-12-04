@@ -6,7 +6,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from django.db.models import Q
-from .models import Post, Comment
+from .models import Post, Comment, Location
 from .forms import CommentForm, PostForm
 
 # Create your views here.
@@ -29,13 +29,12 @@ class PostList(generic.ListView):
         if query:
             queryset = queryset.filter(
                 Q(title__icontains=query) |
-                Q(category__category__icontains=query) |
-                Q(location__location__icontains=query)
+                Q(category__type__icontains=query) |
+                Q(location__name__icontains=query)
             )
         return queryset
        
         
-
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -134,7 +133,7 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPost(LoginRequiredMixin, generic.CreateView, ):
+class AddPost(LoginRequiredMixin, generic.CreateView):
     """ 
     Add create post view
     """
@@ -145,6 +144,9 @@ class AddPost(LoginRequiredMixin, generic.CreateView, ):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        location_name = form.cleaned_data.get('location')
+        location, created = Location.objects.get_or_create(name=location_name)
+        form.instance.location = location
         return super(AddPost, self).form_valid(form)
     
 

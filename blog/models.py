@@ -11,7 +11,7 @@ class Category(models.Model):
     """ 
     Stores a catogory for each blog post
     """
-    category = models.CharField(max_length=50)
+    type = models.CharField(max_length=50)
     """
     Meta class to show correct plural name
     """
@@ -20,17 +20,17 @@ class Category(models.Model):
         verbose_name_plural = "categories"
 
     def __str__(self):
-        return self.category
+        return self.type
 
 
 class Location(models.Model):
     """
     Stores a location for each blog post
     """
-    location = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.location
+        return self.name
 
 
 class Post(models.Model):

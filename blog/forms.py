@@ -6,8 +6,11 @@ from .models import Comment, Post
 
 class PostForm(forms.ModelForm):
     """ 
-    location = forms.CharField(max_length=30)
-    
+    Allows users to input a new location if current location not available
+    """
+    location = forms.CharField(max_length=50, label="Location")
+
+    """ 
     Post class for users to create a post
     """
     class Meta:
@@ -18,7 +21,6 @@ class PostForm(forms.ModelForm):
         fields = [
             "title",
             "featured_image",
-            "location",
             "category",
             "rating",
             "content",
@@ -31,11 +33,10 @@ class PostForm(forms.ModelForm):
         widgets = {
             'content': SummernoteWidget(),
         }
-        
+
         labels = {
             "title": "Business name.",
             "featured_image": "Featured image.",
-            "location": "Location.",
             "category": "Category.",
             "rating": "Happy Heath or Grumpy Croasdale?",
             "content": "Write your Blog.",
