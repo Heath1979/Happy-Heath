@@ -197,6 +197,17 @@ footer {
     padding: 5px;
 }
 
+/* approval page */
+
+.approval-home {
+    color: #fff;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+}
+
 /* button styles */
 
 .btn-signup,

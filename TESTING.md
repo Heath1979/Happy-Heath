@@ -50,6 +50,7 @@ Due to using Jinja syntax such as '{% extends "base.html" %} I had to use a diff
 | 5 | Search functionality for posts caused site to crash | Yes | Function in views did not take into account that category and location are foreign keys | 63459b9 |
 | 6 | add_post.html not loading for a logged in user on the post link | Yes | blogs/urls.py pathways needed to be re-ordered. Path to the page was initially added at the bottom of the list when should have been second in the list | ddf898e |
 | 7 | Images not sizing correctly on post_detail.html | Yes | Added white background and used object fit in css. Would alos recomend resizing image before adding to post | 605ffb1 |
+| 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
 
 
 
