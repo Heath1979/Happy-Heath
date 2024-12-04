@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
-from django.views.generic import CreateView
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from django.db.models import Q
 from .models import Post, Comment
@@ -132,7 +132,7 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPost(CreateView):
+class AddPost(LoginRequiredMixin, generic.CreateView):
     """ 
     Add create post view
     """
@@ -144,3 +144,16 @@ class AddPost(CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super(AddPost, self).form_valid(form)
+
+
+class EditPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+    """ 
+    Add edit post view 
+    """
+    template_name = 'blog/edit_post.html'
+    model = Post
+    form_class = PostForm
+    success_url = '/blog/'
+
+    def test_func(self):
+        return self.request.author == self.get_object().author
