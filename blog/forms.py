@@ -3,8 +3,9 @@ from .models import Comment, Post
 
 
 class PostForm(forms.ModelForm):
-    location = forms.CharField(max_length=30)
     """ 
+    location = forms.CharField(max_length=30)
+    
     Post class for users to create a post
     """
     class Meta:

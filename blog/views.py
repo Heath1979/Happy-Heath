@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.urls import reverse_lazy
 from django.views import generic
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from django.db.models import Q
@@ -132,28 +134,36 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPost(LoginRequiredMixin, generic.CreateView):
+class AddPost(LoginRequiredMixin, generic.CreateView, ):
     """ 
     Add create post view
     """
     template_name = 'blog/add_post.html'
     model = Post
     form_class = PostForm
-    success_url = '/blog/'
+    success_url = reverse_lazy('await_approval')  
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super(AddPost, self).form_valid(form)
+    
 
-
-class EditPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+class EditPost(LoginRequiredMixin, UserPassesTestMixin, 
+    SuccessMessageMixin, generic.UpdateView):
     """ 
     Add edit post view 
     """
     template_name = 'blog/edit_post.html'
     model = Post
     form_class = PostForm
-    success_url = '/blog/'
+    success_message = "The post '%(title)s' was updated successfully"
+    
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'slug': self.object.slug})
 
     def test_func(self):
-        return self.request.author == self.get_object().author
+        post = self.get_object()
+        return self.request.user == post.author
+
+    def get_success_message(self, cleaned_data):
+        return self.success_message % {'title': self.object.title}  

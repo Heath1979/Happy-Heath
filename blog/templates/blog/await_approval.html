@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <h1 class="text-center">Thank you for your post. Once it has beer reviewed it will be published to the main site</h1>
+    <p class="text-center">Kind Regards</p>
+    <h2 class="text-center">The Happy Heath Team</h2>
+    <hr>
+    <img src="{% static 'images/happy-heath-big.webp' %}" alt="big happy heath" class="text-center">
+    <p class="text-center">Please feel free to enjoy the resr of the content on this site by clicking the button below</p>
+    <a href="{% url 'home' %}" class="text-center"><button>Home</button></a>
+</div>
+
+{% endblock %}
+
+
