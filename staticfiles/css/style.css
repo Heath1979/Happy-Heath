@@ -265,8 +265,8 @@ form {
 }
 
 .link {
-    color: #fff;
-    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .link:hover,
