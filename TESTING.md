@@ -66,7 +66,7 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 | Page | Screenshot | Errors | Warnings |
 | ---- | ------ | ------ | ------ | 
 | base.html | ![js from base.html](documentation/testing/base_js.png) | none | none |
-| post_detail.html | ![js from post_detail.html](documentation/testing/post_index.png) | none | none |
+| post_detail.html | ![js from post_detail.html](documentation/testing/post_index_js.png) | none | none |
 
 <hr>
 
@@ -77,7 +77,8 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 | Feature | admin.py | forms.py | models.py | urls.py | views.py |
 | ---- | ---- | ------- | ------ | ----- | -----|
 | Config | n/a | n/a | n/a | [No Errors](documentation/testing/config_urls.png) | n/a |
-| Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) | [No Errors](documentation/testing/blog_models.png) | [No Errors]()
+| Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) | [No Errors](documentation/testing/blog_models.png) | [No Errors](documentation/testing/blog_urls.png) | [No Errors](documentation/testing/blog_views.png) |
+| About | [No Errors](documentation/testing/about_admin.png) |
 
 
 ## Bugs

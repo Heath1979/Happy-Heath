@@ -5,7 +5,7 @@ from .models import About, CollaborateRequest
 
 @admin.register(About)
 class AboutAdmin(SummernoteModelAdmin):
-    """ 
+    """
     Admin configuration for the About model.
     """
     summernote_fields = ('content',)

@@ -13,8 +13,8 @@ from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
-    """ 
-    Display all published posts in blog/index.html 
+    """
+    Display all published posts in blog/index.html
     and set number of posts per page.
     """
     model = Post
@@ -33,8 +33,8 @@ class PostList(generic.ListView):
                 Q(location__name__icontains=query)
             )
         return queryset
-       
-        
+
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -46,7 +46,7 @@ def post_detail(request, slug):
     ``comment_count``
         A count of approved comments related to the post.
     ``comment_form``
-        An instance of :form:'blog.CommentForm'.            
+        An instance of :form:'blog.CommentForm'
     **Template:**
     :template:`blog/post_detail.html`
     """
@@ -67,7 +67,7 @@ def post_detail(request, slug):
                 'Comment submitted. Thank you for being part of the community'
             )
 
-    comment_form = CommentForm()  
+    comment_form = CommentForm()
 
     return render(
         request,
@@ -78,7 +78,7 @@ def post_detail(request, slug):
             "comment_count": comment_count,
             "comment_form": comment_form,
         },
-    )    
+    )
 
 
 def comment_edit(request, slug, comment_id):
@@ -90,7 +90,7 @@ def comment_edit(request, slug, comment_id):
     ``commemt``
         A single comment related to the post.
     ``comment_form``
-        An instance of :form:'blog.CommentForm'.        
+        An instance of :form:'blog.CommentForm'.
     """
     if request.method == "POST":
 
@@ -106,9 +106,10 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR, 'Error updating comment!')
 
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))    
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 def comment_delete(request, slug, comment_id):
@@ -118,7 +119,7 @@ def comment_delete(request, slug, comment_id):
     ``post``
         An instance of :model:'blog.post'.
     ``comment``
-        A single comment related to the post.    
+        A single comment related to the post.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -128,38 +129,41 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 class AddPost(LoginRequiredMixin, generic.CreateView):
-    """ 
+    """
     Add create post view
     """
     template_name = 'blog/add_post.html'
     model = Post
     form_class = PostForm
-    success_url = reverse_lazy('await_approval')  
-
+    success_url = reverse_lazy('await_approval')
+    """
+    credit to perplexity AI
+    """
     def form_valid(self, form):
         form.instance.author = self.request.user
         location_name = form.cleaned_data.get('location')
         location, created = Location.objects.get_or_create(name=location_name)
         form.instance.location = location
         return super(AddPost, self).form_valid(form)
-    
 
-class EditPost(LoginRequiredMixin, UserPassesTestMixin, 
-    SuccessMessageMixin, generic.UpdateView):
-    """ 
-    Add edit post view 
+
+class EditPost(LoginRequiredMixin, UserPassesTestMixin,
+               SuccessMessageMixin, generic.UpdateView):
+    """
+    Add edit post view
     """
     template_name = 'blog/edit_post.html'
     model = Post
     form_class = PostForm
     success_message = "The post '%(title)s' was updated successfully"
-    
+
     def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.slug})
 
@@ -168,12 +172,12 @@ class EditPost(LoginRequiredMixin, UserPassesTestMixin,
         return self.request.user == post.author
 
     def get_success_message(self, cleaned_data):
-        return self.success_message % {'title': self.object.title}  
+        return self.success_message % {'title': self.object.title}
 
 
 class DeletePost(LoginRequiredMixin, UserPassesTestMixin,
-    generic.DeleteView):
-    """ 
+                 generic.DeleteView):
+    """
     Add delete post view
     """
     template_name = 'blog/delete_post.html'
@@ -186,5 +190,5 @@ class DeletePost(LoginRequiredMixin, UserPassesTestMixin,
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['post'] = self.get_object()  
-        return context    
+        context['post'] = self.get_object()
+        return context
