@@ -90,6 +90,24 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
   
 <hr> 
 
+### Lighthouse Scores
+
+Lighthouse testing was carried out in Incognito mode to acheive the best result. Performance was lower than preferred due to the site being image heavy. Static images used in the sites design were saved in webp. Image types added by a site user are at there own discretion and could affect the score. The CDNs used for Bootstrap were also noted in the Lighthouse report as causing issue with performance. This report will be reviewed for future development of Happy Heath to raise this score.
+
+![Lighthouse scores home](documentation/testing/home_lg.png)
+*Desktop Home Page*  
+  
+![Lighthouse scores paginated blogs](documentation/testing/blog_lh.png)
+*Desktop Paginated Blogs Page*
+
+![Lighthouse scores blog post](documentation/testing/blog_post_lh.png)
+*Desktop Blog Post Page*  
+  
+![Lighthouse scores about](documentation/testing/about_lh.png)
+*Desktop About Page*
+  
+<hr>  
+
 ## Bugs
 
 | No. | Bug | Solved | Fix | Commit no. |
