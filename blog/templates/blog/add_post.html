@@ -9,7 +9,7 @@
 {% load crispy_forms_tags %}
 
 <div class="form-container">
-    <form method="POST" enctype="multipart/form-data" class="p-2 post-form">
+    <form method="POST" enctype="multipart/form-data" class="p-2 contrast">
         <h1 class="test-center">Add Post</h1>
         {% csrf_token %}
         {{ form|crispy }}

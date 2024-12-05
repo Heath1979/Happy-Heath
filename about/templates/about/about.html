@@ -38,7 +38,7 @@
 
       <!-- add your form here. Your submit button should 
                                 have the classes of btn, btn-secondary -->
-      <form method="post">
+      <form method="post" class="contrast">
         {{ collaborate_form | crispy }}
         {% csrf_token %}
         <button class="submit-btn btn-secondary" type="submit">Submit</button>

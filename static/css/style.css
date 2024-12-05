@@ -48,6 +48,11 @@ nav {
     font-weight: bold;
 }
 
+.contrast {
+    color: #02020A;
+    font-weight: 600;
+}
+
 footer {
     color: #02020A;
     background-color: #99775C;
@@ -182,13 +187,6 @@ footer {
     background-color: #99775C;
 }
 
-/* styles for add_post.html */
-
-.post-form {
-    color: #02020A;
-    font-weight: 600;
-}
-
 /* styles for about.html */
 
 .profile-image {
@@ -211,11 +209,6 @@ footer {
 
 .approval-home {
     color: #fff;
-}
-
-.approval-p {
-    color: #02020A;
-    font-weight: 600;
 }
 
 .image-div {
@@ -242,11 +235,6 @@ form {
 
 .warning {
     color: red;
-}
-
-.cancel {
-    color: #02020A;
-    font-weight: 600;
 }
 
 /* button styles */
