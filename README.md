@@ -1,6 +1,6 @@
 # Happy Heath
 
-![Happy Heath landing page](documentation/final_views/landing-page.png)
+![Happy Heath landing page](documentation/final_views/landing_page.png)
 
 ## Introduction
 
@@ -72,7 +72,7 @@ Happy Heath is accessible via all browsers with full responsiveness on different
 
 I aimed for a colour scheme that evoked feelings of warmth and trust. The colour scheme aims to provide an earthy palette in order to create an inviting and natural aesthetic.
 
-![screenshot of colour scheme](documentation/final_views/color-pallette.png)  
+![screenshot of colour scheme](documentation/final_views/color_pallette.png)  
 
 ### Font
 
@@ -162,7 +162,7 @@ The wireframes for Happy Heath were made using Balsamiq. I was sure of the struc
 
 <details open>
   <summary>Home Wireframe</summary>
-  <img src="documentation/wireframes/wireframe-home.png">
+  <img src="documentation/wireframes/wireframe_home.png">
 </details>  
 
 <details open>
@@ -253,12 +253,12 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 <details open>
   <summary>Header & Navigation - all users (laptop)</summary>
-  <img src="documentation/final_views/feature-header-laptop.png">
+  <img src="documentation/final_views/feature_header_laptop.png">
 </details>  
 
 <details open>
   <summary>Header & Navigation - all users (mobile)</summary>
-  <img src="documentation/final_views/feature-header-mobile.png">
+  <img src="documentation/final_views/feature_header_mobile.png">
 </details>  
 
 <details open>
@@ -511,4 +511,4 @@ The following sites complemented my learning for this project alongside the [Cod
 - To my wonderful partner Jolene who is the inspiration behind everything that I do. I think she may deserve that trip to Katies in Fleetwood.
 - Finally I would like to acknowledge the part of John Feeney as an inspiration behind this project. He coined the phrase 'Happy Heath or a Grumpy Croasdale' and its only through the example of his life that I always strive to be a 'Happy Heath'.
 
-![John and I](documentation/final_views/john-and-I.png)
+![John and I](documentation/final_views/john-and_I.png)
