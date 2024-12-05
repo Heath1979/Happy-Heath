@@ -78,8 +78,17 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 | ---- | ---- | ------- | ------ | ----- | -----|
 | Config | n/a | n/a | n/a | [No Errors](documentation/testing/config_urls.png) | n/a |
 | Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) | [No Errors](documentation/testing/blog_models.png) | [No Errors](documentation/testing/blog_urls.png) | [No Errors](documentation/testing/blog_views.png) |
-| About | [No Errors](documentation/testing/about_admin.png) |
+| About | [No Errors](documentation/testing/about_admin.png) | [No Errors](documentation/testing/about_forms.png) | [No Errors](documentation/testing/about_models.png) | [No Errors](documentation/testing/about_urls.png) | [No Errors](documentation/testing/about_views.png) |
 
+<hr>
+
+### CSS Validation
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css) was not tested. 
+
+![css validation](documentation/testing/css_valid.png)
+  
+<hr> 
 
 ## Bugs
 

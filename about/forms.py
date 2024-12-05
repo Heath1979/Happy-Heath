@@ -1,8 +1,9 @@
 from django import forms
 from .models import CollaborateRequest
 
+
 class CollaborateForm(forms.ModelForm):
-    """ 
+    """
     Form for handling collaboration/contact requests.
     """
     class Meta:

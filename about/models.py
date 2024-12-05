@@ -9,16 +9,16 @@ class About(models.Model):
     Stores a single about me text.
     """
     title = models.CharField(max_length=200)
-    profile_image = CloudinaryField('image', default='placeholder') 
+    profile_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
     updated_on = models.DateTimeField(auto_now=True)
-     
+
     def __str__(self):
         return self.title
 
 
 class CollaborateRequest(models.Model):
-    """ 
+    """
     stores instances where a user has filled out the Contact Form
     """
     name = models.CharField(max_length=200)
