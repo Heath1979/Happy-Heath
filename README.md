@@ -1,6 +1,6 @@
 # Happy Heath
 
-![Happy Heath responsive screenshot](documentation/final_views/)
+![Happy Heath landing page](documentation/final_views/landing-page.png)
 
 ## Introduction
 
@@ -61,10 +61,10 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
 Happy Heath is a blog site about experiences with local businesses. Users are invited to:
 
 - Join the Happy Heath community
-- Create their own profiles
+- Create their own posts
 - Interact with reviews through the comments section
 
-Happy Heath is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to create a space where people can read about local businesses and comment on their own experiences. Many small businesses can often only be found through social media business pages and rely on word of mouth to build up business. The aim of the site is to support these businesses and drive customers to them where possible via positive blog posts. Any posts that have a critique of a business should still provide some positivity and hopefully just be to highlight a fixable negative. Happy Heath aims to provide a starting point for people to discuss and promote local businesses. In future developments I would like to invite local businesses the opportunity to promote themselves and add the functionality for users to search for businesses by type.
+Happy Heath is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to create a space where people can read about local businesses and comment on their own experiences. Many small businesses can often only be found through social media business pages and rely on word of mouth to build up business. The aim of the site is to support these businesses and drive customers to them where possible via positive blog posts. Any posts that have a critique of a business should still provide some positivity and hopefully just be to highlight a fixable negative. Happy Heath aims to provide a starting point for people to discuss and promote local businesses. In future developments I would like to invite local businesses the opportunity to promote themselves and add the functionality for users to search for businesses by type. I would like to add an events page for specific calendar events.
 
 # UX - User Experience
 
@@ -82,7 +82,7 @@ In terms of Font style I opted to stay with the standard Ariel due to its famili
  
 ## Strategy Plane
 
-The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
+The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. Usres would also be able to create their own posts to further expand site content. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
 
 ### Site Goals
 
@@ -93,7 +93,7 @@ The project goal was to build a simple website showcasing users experiences with
 
 ## Agile Methodologies - Project Management
 
- Happy Heath is my first project following Agile planning methods. I used my [Github Projects Board](https://github.com/users/Heath1979/projects/4) to plan and document all of my work.
+ Happy Heath is my second project following Agile planning methods. I used my [Github Projects Board](https://github.com/users/Heath1979/projects/4) to plan and document all of my work.
 
 ### MoSCoW Prioritization
 
@@ -114,10 +114,10 @@ User stories and features recorded and managed on [GitHub Projects](https://gith
 |----------------------------------------------------------------------------------------------------------------------------|---------------|
 | As a **user**, I would like to **view a paginated list of posts** so that I can **select which post I want to view** | **MUST HAVE** |
 | As a **site user**, I would like to **click on a post** so that I can **read the full text** | **MUST HAVE** |
-| As a **user**, I would like to **check my profile page** so that I can **see my history and amend my details** | **COULD HAVE** |
+| As a **user**, I would like to **check my profile page** so that I can **see my history and amend my details** | **WON'T HAVE** |
 | As a **site user/admin**, I would like to **view comments on an individual post** so that I can **see feedback on the post** | **SHOULD HAVE** |
 | As a **site user**, I would like to **regisger an account** so that I can **comment on a post** | **MUST HAVE** |    
-| As a **user**, I would like to **access a blank review/blog template** so that I can **create my own post** | **WONT HAVE** | 
+| As a **user**, I would like to **access a blank review/blog template** so that I can **create my own post** | **COULD HAVE** | 
 | As a **user**, I would like to **comment on a post** so that I can **interact with the community** | **SHOULD HAVE** | 
 | As a **site user**, I would like to **be able to modify or delete a comment on a post** so that I can **make amendments** | **SHOULD HAVE** | 
 | As a **user**, I would like to **be able to access external links** so that I can **learn more about the topics in the posts** | **COULD HAVE** | 
@@ -138,7 +138,6 @@ Essential features of my project were:
 - An accessible website that fulfils user needs
 - Responsive website for users of mobile, tablet and desktop devices
 - User Authentication
-- User profile creation and editing
 - Comment feature with full CRUD functionality
 - About me details to inform the user
 
@@ -156,9 +155,15 @@ The wireframes for Happy Heath were made using Balsamiq. I was sure of the struc
 
 **Mobile and Desktop views for:**
  
+- Home 
 - About
 - Paginated posts
 - Blog post
+
+<details open>
+  <summary>Home Wireframe</summary>
+  <img src="documentation/wireframes/wireframe-home.png">
+</details>  
 
 <details open>
   <summary>About Wireframe</summary>
@@ -167,12 +172,12 @@ The wireframes for Happy Heath were made using Balsamiq. I was sure of the struc
 
 <details open>
   <summary>Paginated posts Wireframe</summary>
-  <img src="documentation/wireframes/wireframe_home.png">
+  <img src="documentation/wireframes/wireframe_blog.png">
 </details>
 
 <details open>
   <summary>Blog posts Wireframe</summary>
-  <img src="documentation/wireframes/wireframe_blog.png">
+  <img src="documentation/wireframes/wireframe_blog_posts.png">
 </details>
 
 ### Database Schema - Entity Relationship Dagram
@@ -220,10 +225,14 @@ It was important to me from the beginning that Happy Heath be accessible to an u
 
 | Feature | Unregistered User | Registered, Logged-In User |
 |-----------|-------------------|-----------------|
+| Home page | Visible | Visible |
 | About page | Visible | Visible |
 | Paginated blogs | Visible | Visible |
 | Blog post | Visible | Visible |
 | Comments | Visible but not able to add/amend | Visible with full feature interaction |
+| Add post | Not Visible | Visible |
+| Edit post | Not visible | Only visible to post author |
+| Delete post | Not Visible | Only visible to post author |
 
 ## CRUD Functionality
 
@@ -232,23 +241,24 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 | Feature | Create | Read | Update | Delete |
 |---------|--------|------|--------|--------|
 | Profile | Created upon registration | No | No | Full profile deletion is currently only available to Admin upon user account deletion |
-| Posts | By admin only | Yes | By admin only | By admin only |
-| Comments | Yes for registered users | Yes | Yes for registered users | Yes for registered users |
+| Posts | Yes for registered users | Yes | Yes for registered users | Yes for registered users |
+| Comments | Yes for registered users | Yes | Yes for registered users | Yes for registered users | 
+| About | Only available to site admin | Yes | Only available for site admin | Only available for site admin |
 
 ## Feature showcase
 
-*For features showcase screenshots were taken on laptop*
+*For features showcase screenshots were taken on laptop and iphone SE*
 
 **Header/Navigation & Footer**
 
 <details open>
   <summary>Header & Navigation - all users (laptop)</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/final_views/feature-header-laptop.png">
 </details>  
 
 <details open>
   <summary>Header & Navigation - all users (mobile)</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/final_views/feature-header-mobile.png">
 </details>  
 
 <details open>

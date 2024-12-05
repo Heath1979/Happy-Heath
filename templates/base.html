@@ -109,7 +109,7 @@
             {% if request.path == blog_url %}
             <form role="search" action="{% url 'home' %}">
                 <input id="search" name="q" type="search" placeholder="Search"
-                    aria-label="Search function to filter posts by title, location, or category" role="search">
+                    aria-label="Search function to filter posts by title, location, or category">
                 <button class="btn-edit" type="submit">Search</button>
             </form>
             {% endif %}
