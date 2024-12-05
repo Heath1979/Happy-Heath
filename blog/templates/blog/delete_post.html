@@ -10,13 +10,15 @@
     <h1 class="text-center warning">Warning - you are about to delete your post</h1>
     <p class="text-center contrast">Are you sure you want to delete "{{ post.title }}"? Once confirmed this action can
         not be undone.</p>
-    <form method="post">
-        {% csrf_token %}
-        <div class="image-div">
-            <button type="submit" class="btn-danger">Confirm Delete</button>
-        </div>
-        <hr>
-    </form>
+    <div class="delete-post">
+        <form method="post">
+            {% csrf_token %}
+            <div class="danger-button">
+                <button type="submit" class="btn-danger">Confirm Delete</button>
+            </div>
+            <hr>
+        </form>
+    </div>
     <a href="{% url 'home' %}" class="image-div contrast">Cancel</a>
     <div class="image-div">
         <img src="{% static 'images/grumpy-big.webp' %}" alt="big grumpy croasdale">

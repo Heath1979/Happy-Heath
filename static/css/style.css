@@ -229,6 +229,17 @@ form {
 
 /* delete page */
 
+.delete-post {
+    display: flex;
+    justify-content: center;
+}
+
+.danger-button {
+    display: flex;
+    justify-content: center;
+}
+
+
 .warning {
     color: red;
 }
