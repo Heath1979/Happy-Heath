@@ -59,6 +59,16 @@ footer {
     font-size: large;
 }
 
+/* style for home.html */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 /* styles for index.html */
 
 .card-text {

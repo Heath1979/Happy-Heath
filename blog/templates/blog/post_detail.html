@@ -1,7 +1,10 @@
-{% extends 'base.html' %} 
-{% block title %}{{ post.title }}{% endblock %}
-{% block content %}
+{% extends 'base.html' %}
+
 {% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
 
 {% load crispy_forms_tags %}
 
@@ -14,7 +17,7 @@
         <!-- Post author goes before the | the post's created date goes after -->
         <p class="post-location">Based in {{ post.location }}</p>
         <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-       <div class="socials">
+        <div class="socials">
           {% if "https://example.com" in post.social_links %}
           <!-- prevents <a> showing when no valid URL present -->
           {% else %}
@@ -32,22 +35,21 @@
           <!-- prevents <a> showing when no valid URL present -->
           {% if "https://example.com" in post.video_links %}
           {% else %}
-          <a class="social-links" href="{{ post.video_links }}" aria-label="link supporting youtube video" target="_blank">
+          <a class="social-links" href="{{ post.video_links }}" aria-label="link supporting youtube video"
+            target="_blank">
             <i class="fa-brands fa-youtube"></i>
           </a>
           {% endif %}
-        </div> 
+        </div>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
         <div class="scale">
-        {% if "placeholder" in post.featured_image.url %}
-        <img src="{% static 'images/default.webp' %}" class="img-fluid"
-          alt="placeholder image">
-        {% else %}
-        <img src="{{ post.featured_image.url }}" class="img-fluid"
-          alt="{{ post.title }}">
-        {% endif %}
-      </div>
+          {% if "placeholder" in post.featured_image.url %}
+          <img src="{% static 'images/default.webp' %}" class="img-fluid" alt="placeholder image">
+          {% else %}
+          <img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}">
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
@@ -65,12 +67,12 @@
       </div>
     </div>
   </div>
-  {% if request.user == post.author %} 
-                <div class="text-center">
-                    <a href="{% url 'edit_post' post.slug %}" class="btn btn-edit">Edit</a>
-                    <a href="{% url 'delete_post' post.slug %}" class="btn btn-delete-post">Delete</a>
-                </div>
-                {% endif %}
+  {% if request.user == post.author %}
+  <div class="text-center">
+    <a href="{% url 'edit_post' post.slug %}" class="btn btn-edit">Edit</a>
+    <a href="{% url 'delete_post' post.slug %}" class="btn btn-delete-post">Delete</a>
+  </div>
+  {% endif %}
   <!-- Displaying count of comments -->
   <div class="row">
     <div class="col-12">
@@ -135,23 +137,19 @@
   </div>
 </div>
 <!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1"
-  aria-labelledby="deleteModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"
-          id="deleteModalLabel">Delete comment?</h5>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Are you sure you want to delete your comment?
         This action cannot be undone.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-          data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <a id="deleteConfirm" href="#" class="btn
           btn-danger">Delete</a>
       </div>

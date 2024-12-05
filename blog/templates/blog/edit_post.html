@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+
 {% load static %}
-{% load crispy_forms_tags %}
+
 {% block title %}Edit Post{% endblock %}
 
 {% block content %}
 
-<div class="container">
-    <div class="form-container">
+{% load crispy_forms_tags %}
+
+<div class="form-container">
     <form method="POST" enctype="multipart/form-data" class="p-2 post-form">
         <h1 class="text-center">Edit Post</h1>
         {% csrf_token %}
@@ -16,6 +18,6 @@
         </div>
     </form>
 </div>
-</div>
+
 
 {% endblock %}
