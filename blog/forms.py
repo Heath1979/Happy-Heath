@@ -5,16 +5,15 @@ from .models import Comment, Post
 
 
 class PostForm(forms.ModelForm):
-    """ 
+    """
     Allows users to input a new location if current location not available
     """
     location = forms.CharField(max_length=50, label="Location")
-
-    """ 
+    """
     Post class for users to create a post
     """
     class Meta:
-        """ 
+        """
         Specify the model and order of the fields
         """
         model = Post
@@ -45,13 +44,15 @@ class PostForm(forms.ModelForm):
             "web_links": "Business Website",
             "video_links": "Supporting YouTube channel or video.",
         }
-
+    """
+    credit to perplexity AI
+    """
     def save(self, commit=True):
         instance = super(PostForm, self).save(commit=False)
         instance.slug = slugify(instance.title)
         if commit:
             instance.save()
-        return instance    
+        return instance
 
 
 class CommentForm(forms.ModelForm):
@@ -60,7 +61,8 @@ class CommentForm(forms.ModelForm):
     """
     class Meta:
         """
-        Specify the Django model and order of the fields
+         Specify the Django model and order of the fields
         """
         model = Comment
         fields = ('body',)
+       

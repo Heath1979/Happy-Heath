@@ -59,7 +59,7 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 
 <hr>
 
-### JavaScript validation
+### JavaScript Validation
 
 [JSHint](https://jshint.com/) was used to validate the small amount of JavaScript code added to the project. External JS, for Bootstrap purposes, obtained via [CDN](https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css) was not validated through JSHint.
 
@@ -70,6 +70,14 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 
 <hr>
 
+### Python Validation
+
+[CI Python Linter](https://pep8ci.herokuapp.com) was used to validate the Python files that were created or edited by myself. No issues presented. I have included some screenshots with the results below.
+
+| Feature | admin.py | forms.py | models.py | urls.py | views.py |
+| ---- | ---- | ------- | ------ | ----- | -----|
+| Config | n/a | n/a | n/a | [No Errors](documentation/testing/config_urls.png) | n/a |
+| Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) |
 
 
 ## Bugs
