@@ -77,7 +77,7 @@ Initially my searh function raised a [warning](documentation/testing/search_vali
 | Feature | admin.py | forms.py | models.py | urls.py | views.py |
 | ---- | ---- | ------- | ------ | ----- | -----|
 | Config | n/a | n/a | n/a | [No Errors](documentation/testing/config_urls.png) | n/a |
-| Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) |
+| Blog | [No Errors](documentation/testing/blog_admin.png) | [No Errors](documentation/testing/blog_forms.png) | [No Errors](documentation/testing/blog_models.png) | [No Errors]()
 
 
 ## Bugs
