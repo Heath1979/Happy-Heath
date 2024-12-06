@@ -114,12 +114,18 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
 
 Testing was carried out on desktop using a Chrome browser to ensure all forms take the intended input and process the input appropriately.
 
-| Feature | Tseted? | User Input required | User Feedback Provided | Pass/Fail | Fix |
+| Feature | Tested? | User Input required | User Feedback Provided | Pass/Fail | Fix |
 | ------- | ------- | ------------------- | ---------------------- | --------- | --- |
 | Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
 | Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/password_similar.png) too similar, password too short | Pass | - |
 | Login | Yes | Username and Password | Username and Password must be exactly as originally registered. User notified once successfully signed in. | Pass | - |
-| Search field | Any input accepted but Search results are tailored to Location, Category, and Post title. | Users will be presented with the results of their search. If no
+| Search Field | Any input accepted but Search results are tailored to Location, Category, and Post title. | Users will be presented with the results of their search. If no results are found the user receives [this](documentation/testing/search_feedback.png) feedback | Pass | - |
+| Add Post (Registered User) | Yes | Mixture of image and text fields. Business name, Post Content and Location are required fields. User is redirected back to the Business name field if not entered when trying to post. User receives [this](documentation/testing/add_post_mt_loc.png) if location field is blank. User receives [this](documentation/testing/add_post_mt_content.png) if content field is left blank. Once completed the User is notified that the Post will be published after it has been reviewed by the Happy Heath team | Pass | - |
+| Comment Box (Registered User) | Yes | Text input accepted | User is thanked for their comment | Pass | - |
+| Edit Comment (Registered, Author) | Yes | Click button to choose Edit | Comment appears in comment box for update and update button appears underneath. When pressed the user is infomred that the comment has been updated | Pass | - |
+| Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/comment_delete_modal.png) pops up asking the user if they are sure they want to delete their comment | Pass | - |
+
+
 
 
 ## Bugs
