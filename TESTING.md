@@ -119,7 +119,7 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
 | Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/password_similar.png) too similar, password too short | Pass | - |
 | Login | Yes | Username and Password | Username and Password must be exactly as originally registered. User notified once successfully signed in. | Pass | - |
-| Search field |  
+| Search field | Any input accepted but Search results are tailored to Location, Category, and Post title. | Users will be presented with the results of their search. If no
 
 
 ## Bugs
@@ -134,6 +134,7 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | 6 | add_post.html not loading for a logged in user on the post link | Yes | blogs/urls.py pathways needed to be re-ordered. Path to the page was initially added at the bottom of the list when should have been second in the list | ddf898e |
 | 7 | Images not sizing correctly on post_detail.html | Yes | Added white background and used object fit in css. Would alos recomend resizing image before adding to post | 605ffb1 |
 | 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
-| 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | 
+| 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | dc6eea6 |
+
 
 

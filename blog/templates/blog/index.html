@@ -11,6 +11,10 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
+            <!-- Check if a search query exists -->
+            {% if query %}
+            <h2>Search Results for "{{ query }}"</h2>
+            {% endif %}
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
@@ -51,7 +55,10 @@
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
+                <!-- If no posts are found -->
+                {% if not post_list %}
+                <p>No posts found for your search.</p>
+                {% endif %}
             </div>
         </div>
     </div>
