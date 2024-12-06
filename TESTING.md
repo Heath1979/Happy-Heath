@@ -108,6 +108,12 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
   
 <hr>
 
+### Wave Accisibility Evaluation 
+
+![WAVE Web Accessibility Evaluation Tools](documentation/testing/wave-accissibilty.png)
+
+The WAVE report tool was used to check accisibility and initially raised a number of contrast issues due to the shade of the background colour. This was amended to accomadate and clear the accisibility issues.
+
 ## Manual Testing
 
 ### User Input/Form Validation
@@ -119,11 +125,17 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
 | Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/password_similar.png) too similar, password too short | Pass | - |
 | Login | Yes | Username and Password | Username and Password must be exactly as originally registered. User notified once successfully signed in. | Pass | - |
-| Search Field | Any input accepted but Search results are tailored to Location, Category, and Post title. | Users will be presented with the results of their search. If no results are found the user receives [this](documentation/testing/search_feedback.png) feedback | Pass | - |
-| Add Post (Registered User) | Yes | Mixture of image and text fields. Business name, Post Content and Location are required fields. User is redirected back to the Business name field if not entered when trying to post. User receives [this](documentation/testing/add_post_mt_loc.png) if location field is blank. User receives [this](documentation/testing/add_post_mt_content.png) if content field is left blank. Once completed the User is notified that the Post will be published after it has been reviewed by the Happy Heath team | Pass | - |
+| Search Field | Yes |Any input accepted but Search results are tailored to Location, Category, and Post title. | Users will be presented with the results of their search. If no results are found the user receives [this](documentation/testing/search_feedback.png) feedback | Pass | - |
+| Blog Post Links | Yes | Click | User is taken to intended location via a new tab | Pass | - |
+| Add Post (Registered User) | Yes | Mixture of image and text fields. | Business name, Post Content and Location are required fields. User is redirected back to the Business name field if not entered when trying to post. User receives [this](documentation/testing/add_post_mt_loc.png) if location field is blank. User receives [this](documentation/testing/add_post_mt_content.png) if content field is left blank. Once completed the User is notified that the Post will be published after it has been reviewed by the Happy Heath team | Pass | - |
 | Comment Box (Registered User) | Yes | Text input accepted | User is thanked for their comment | Pass | - |
 | Edit Comment (Registered, Author) | Yes | Click button to choose Edit | Comment appears in comment box for update and update button appears underneath. When pressed the user is infomred that the comment has been updated | Pass | - |
 | Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/comment_delete_modal.png) pops up asking the user if they are sure they want to delete their comment | Pass | - |
+| Edit Post (Registered, Author) | Yes | Image/Text fields | Changes made to post are saved and displayed. The user is informed that the post has been updated successfully | Pass | - |
+| Delete Post (Registered, Author) | Yes | Click Confirm Delete button or cancel | Post is deleted and user is returned to home page | Pass | - |
+| Log Out | Yes | Click Logout in the navigation menu | User is signed out and confirmation message appears at the top of the screen | Pass | - |
+| Contact Form | Yes | Text Fields | Users will get [feedback](documentation/testing/contact_form_input_req.png) if they try to submiy without filling in the required fields. Once submitted successfully the user will receive a notification at the top of the page | Pass | - |
+| Footer icons | Yes | Click | Icons take the user to the intended location via a new tab | Pass | - |
 
 
 
