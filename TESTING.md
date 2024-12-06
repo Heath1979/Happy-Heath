@@ -137,6 +137,24 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Contact Form | Yes | Text Fields | Users will get [feedback](documentation/testing/contact_form_input_req.png) if they try to submiy without filling in the required fields. Once submitted successfully the user will receive a notification at the top of the page | Pass | - |
 | Footer icons | Yes | Click | Icons take the user to the intended location via a new tab | Pass | - |
 
+### Browser Compatibility 
+
+Happy Heath was tested on the following browsers. New users were created and old users data edited. All features were tested and no issues found:
+
+- Chrome v131.0.6778.86
+- Edge v131.0.2903.51
+- Safari v18.1.1
+
+<hr>
+
+### Testing User Stories 
+
+User Stories are documented in the Happy Heath [Github Projects Board](https://github.com/users/Heath1979/projects/4). User Stories are numbered, with Acceptance Criteria and Tasks detailed within. All features were tested to ensure that they provided the user with the expected output and action.
+
+| User Story | Acceptance Criteria Met? | Tested | Response | Pass/Fail | Fix |
+| ---- | ---- | ----- | ---- | ----- | ---- |
+| #1 - View posts lists | Yes | Yes | No issues | Pass | - |
+| #2 - Open a post | Yes | Yes | No issues | Pass | - |
 
 
 
