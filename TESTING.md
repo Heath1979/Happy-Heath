@@ -106,7 +106,20 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
 ![Lighthouse scores about](documentation/testing/about_lh.png)
 *Desktop About Page*
   
-<hr>  
+<hr>
+
+## Manual Testing
+
+### User Input/Form Validation
+
+Testing was carried out on desktop using a Chrome browser to ensure all forms take the intended input and process the input appropriately.
+
+| Feature | Tseted? | User Input required | User Feedback Provided | Pass/Fail | Fix |
+| ------- | ------- | ------------------- | ---------------------- | --------- | --- |
+| Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
+| Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/password_similar.png) too similar, password too short | Pass | - |
+| Login | Yes | Username and Password | Username and Password must be exactly as originally registered | Pass | - |
+
 
 ## Bugs
 
