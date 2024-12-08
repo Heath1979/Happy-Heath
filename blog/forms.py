@@ -1,5 +1,4 @@
 from django import forms
-from django_summernote.widgets import SummernoteWidget
 from django.utils.text import slugify
 from .models import Comment, Post
 
@@ -28,10 +27,6 @@ class PostForm(forms.ModelForm):
             "web_links",
             "video_links",
         ]
-
-        widgets = {
-            'content': SummernoteWidget(),
-        }
 
         labels = {
             "title": "Business name.",

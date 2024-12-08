@@ -155,7 +155,32 @@ User Stories are documented in the Happy Heath [Github Projects Board](https://g
 | ---- | ---- | ----- | ---- | ----- | ---- |
 | #1 - View posts lists | Yes | Yes | No issues | Pass | - |
 | #2 - Open a post | Yes | Yes | No issues | Pass | - |
+| #3 - View user profile | Feature left in backlog as currently unmecessary. User can delete and edit individual items and Admin can delete an account. Future versions will include full CRUD functionality for a user profile. | | | |
+| #4 - View comments | Yes | Yes | No Issues | Pass | - |
+| #5 - Account registration | Yes | Yes | No issues | Pass | - |
+| #6 - Write a blog/review | Yes | Yes | No issues | Pass | - |
+| #7 - Comments on a post | Yes | Yes | No issues | Pass | - |
+| #8 - Modify or delete a comment on a post | Yes | Yes | No issues | Pass | - |
+| #9 - External links | Yes | Yes | No issues | Pass | - | 
+| #10 - Manage posts | Yes | Yes | No issues | Pass | - |
+| #11 - Create drafts | Yes | Yes | No issues | Pass | - | 
+| #12 - Filter Categories | Yes - actioned through search function | Yes | No issues | Pass | - |
+| #13 - Filter location | Yes - actioned through search function | Yes | No issues | Pass | - |
+| #14 - Read about the site | Yes | Yes | No issues | Pass | - | 
+| #15 - Add and update the about text | Yes | Yes | No issues | Pass | - | 
+| #16 - Contact form | Yes | Yes | No issues | Pass | - | 
+| #17 - Collaboration requests | Yes | Yes | No issues | Pass | - | 
 
+<hr>
+
+### Dev Tools/Real World Device Testing
+
+Responsive testing was carrired out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally I would have to refresh the page as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. I put this down to a caching issue in Chrome as this issue was not observed when testing on the available real world devices.
+  
+**Dev Tools Device Testing**
+| Device | Feature | Issue | Fix |
+| ---- | ----- | ---- | ----- |
+| iPhone 12 pro | Add post/Edit post | Content section not resizing to adjust to smaller sceensizes | Removed sSummernote widget |
 
 
 ## Bugs
@@ -171,6 +196,6 @@ User Stories are documented in the Happy Heath [Github Projects Board](https://g
 | 7 | Images not sizing correctly on post_detail.html | Yes | Added white background and used object fit in css. Would alos recomend resizing image before adding to post | 605ffb1 |
 | 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
 | 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | dc6eea6 |
-
+| 10 | Add content section and Add/Edit post not responsive to smaller screensizes | Yes | Removed Summernote widget. Further reading required yo unsderstand how to make a widget responsive | 
 
 
