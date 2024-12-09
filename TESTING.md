@@ -185,6 +185,12 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 | ipad Pro | All features | No issues | None needed |
 | Galaxy Z Fold 5 | All features | No issues | None needed |
 
+**Real World Device Testing**
+| Device      | Feature    | Issue  | Fix  | 
+| ------------| ---------- | ------ |------|
+| MSI Modern 15 H B13M | All features | No issues | None needed |
+| iPhone SE | All features | No issues | None needed |
+
 ## Bugs
 
 | No. | Bug | Solved | Fix | Commit no. |
@@ -199,5 +205,3 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 | 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
 | 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | dc6eea6 |
 | 10 | Add content section and Add/Edit post not responsive to smaller screensizes | Yes | Removed Summernote widget. Further reading required yo unsderstand how to make a widget responsive | 9ad4475 |
-
-
