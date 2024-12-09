@@ -252,7 +252,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Header/Navigation & Footer**
 
 <details open>
-  <summary>Header & Navigation - all users (laptop)</summary>
+  <summary>Header & Navigation - unregisterd users (laptop)</summary>
   <img src="documentation/final_views/feature_header_ur_laptop.png">
 </details>  
 
@@ -262,8 +262,13 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 </details> 
 
 <details open>
-  <summary>Header & Navigation - all users (mobile)</summary>
+  <summary>Header & Navigation - unregisterd users (mobile)</summary>
   <img src="documentation/final_views/feature_header_mobile.png">
+</details> 
+
+<details open>
+  <summary>Header & Navigation - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_header_reg_mobile.png">
 </details>  
 
 <details open>
@@ -395,8 +400,33 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Comments**
 
 <details open>
-  <summary>Comments - all users (laptop)</summary>
-  <img src="documentation/final_views/">
+  <summary>Comments - unregistered user (laptop)</summary>
+  <img src="documentation/final_views/feature_unreg_comments_laptop.png">
+</details>
+
+<details open>
+  <summary>Comments - unregistered user (mobile)</summary>
+  <img src="documentation/final_views/feature_unreg_comments_mobile.png">
+</details>
+
+<details open>
+  <summary>Comments - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_reg_comments_laptop.png">
+</details>
+
+<details open>
+  <summary>Comments - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_reg_comments_mobile.png">
+</details>
+
+<details open>
+  <summary>Comments - author (laptop)</summary>
+  <img src="documentation/final_views/feature_author_comments_laptop.png">
+</details>
+
+<details open>
+  <summary>Comments - author (mobile)</summary>
+  <img src="documentation/final_views/feature_author_comments_mobile.png">
 </details>
 
 **Registration/Sign Up**
