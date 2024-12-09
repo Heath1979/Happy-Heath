@@ -310,6 +310,8 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
   <img src="documentation/final_views/feature_paginated_mobile.png">
 </details> 
 
+**Search Function**
+
 <details open>
   <summary>Search function - all users (laptop)</summary>
   <img src="documentation/final_views/features_search_laptop.png">
@@ -342,10 +344,58 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
   <img src="documentation/final_views/feature_reg_blogpost_mobile.png">
 </details>
 
+**Add Post**
+
+<details open>
+  <summary>Add posts - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_addpost_laptop.png">
+ </details> 
+
+<details open>
+  <summary>Add posts - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_addpost_mobile.png">
+ </details> 
+
+**Await Approval**
+
+<details open>
+  <summary>Post awaiting approval - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_awaitapprovail_laptop.png">
+ </details> 
+
+<details open>
+  <summary>Post awaiting approval - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_awaitapproval_mobile.png">
+ </details> 
+
+**Edit Posts**
+
+<details open>
+  <summary>Edit posts - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_editpost_laptop.png">
+ </details> 
+
+<details open>
+  <summary>Edit posts - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_editpost_mobile.png">
+ </details> 
+
+**Delete Posts**
+
+<details open>
+  <summary>Delete posts - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_deleteposts_laptop.png">
+ </details> 
+
+<details open>
+  <summary>Delete posts - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_deletepost_mobile.png">
+ </details> 
+
 **Comments**
 
 <details open>
-  <summary>Comments - all users</summary>
+  <summary>Comments - all users (laptop)</summary>
   <img src="documentation/final_views/">
 </details>
 
@@ -385,6 +435,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 - **Add picture gallery to posts**: Allows the community to post images that will support the good work of the business that is the topic of the post.
 - **User profile**: Users can view a profile and amend as required.
 - **Notifications**: Users receive some form of notification when new posts are created. Notifications can be set in a user profile.
+- **Events Page**: Users can view upcoming events for a local area and add comments and images after the event has taken place as a celebration of the event.
 
 # Technologies & Languages used
 
