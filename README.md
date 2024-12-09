@@ -262,15 +262,35 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 </details>  
 
 <details open>
-  <summary>Footer - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Footer - all users (laptop)</summary>
+  <img src="documentation/final_views/feature_footer_laptop.png">
 </details>  
+
+<details open>
+  <summary>Footer - all users (mobile)</summary>
+  <img src="documentation/final_views">
+</details>
 
 **About Page**
 
 <details open>
-  <summary>About page - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>About page - all users (laptop)</summary>
+  <img src="documentation/final_views/features_about_laptop.png">
+</details> 
+
+<details open>
+  <summary>About page - all users (mobile)</summary>
+  <img src="documentation/final_views">
+</details> 
+
+<details open>
+  <summary>About page (contact us)- all users (laptop)</summary>
+  <img src="documentation/final_views/features_contact_laptop.png">
+</details> 
+
+<details open>
+  <summary>About page (contact us)- all users (mobile)</summary>
+  <img src="documentation/final_views">
 </details> 
 
 **Paginated Posts**

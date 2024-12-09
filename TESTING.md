@@ -21,7 +21,6 @@ Return back to the [README.md](README.md) file.
     - [Testing User Stories](#testing-user-stories)
     - [Dev Tools/Real World Device Testing](#dev-toolsreal-world-device-testing)
   - [Bugs](#bugs)
-    - [Known Bugs](#known-bugs)
 
 ## Validation
 
