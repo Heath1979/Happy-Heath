@@ -432,29 +432,49 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Registration/Sign Up**
 
 <details open>
-  <summary>Registration - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Registration - all users (laptop)</summary>
+  <img src="documentation/final_views/feature_register_laptop.png">
+</details>
+
+<details open>
+  <summary>Registration - all users (mobile)</summary>
+  <img src="documentation/final_views/feature_register_mobile.png">
 </details>
 
 **Sign In**
 
 <details open>
-  <summary>Sign in - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Sign in - all users (laptop)</summary>
+  <img src="documentation/final_views/feature_signin_laptop.png">
+</details>
+
+<details open>
+  <summary>Sign in - all users (mobile)</summary>
+  <img src="documentation/final_views/feature_signin_mobile.png">
 </details>
 
 **Sign Out**
 
 <details open>
-  <summary>Sign out - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Sign out - registered user (laptop)</summary>
+  <img src="documentation/final_views/feature_signout_laptop.png">
+</details>
+
+<details open>
+  <summary>Sign out - registered user (mobile)</summary>
+  <img src="documentation/final_views/feature_signout_mobile.png">
 </details>
 
 **Admin Panel**
 
 <details open>
-  <summary>Admin panel</summary>
-  <img src="documentation/final_views/">
+  <summary>Admin panel (laptop)</summary>
+  <img src="documentation/final_views/feature_admin_laptop.png">
+</details>
+
+<details open>
+  <summary>Admin panel (mobile)</summary>
+  <img src="documentation/final_views/feature_admin_mobile.png">
 </details>
 
 ## Future Features
