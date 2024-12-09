@@ -21,6 +21,7 @@ Return back to the [README.md](README.md) file.
     - [Testing User Stories](#testing-user-stories)
     - [Dev Tools/Real World Device Testing](#dev-toolsreal-world-device-testing)
   - [Bugs](#bugs)
+   - [Known bugs](#known-bugs)
 
 ## Validation
 
@@ -204,3 +205,7 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 | 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
 | 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | dc6eea6 |
 | 10 | Add content section and Add/Edit post not responsive to smaller screensizes | Yes | Removed Summernote widget. Further reading required yo unsderstand how to make a widget responsive | 9ad4475 |
+
+### Known bugs
+
+- When creating a post using a external source such as AI it renders the content in HTML format in the Edit post view. This can be amended using a summernote widget. The summernote widget was unresponsive to smaller screensizes and at this stage I have not yet understood how to make the summernote widget responsive.

@@ -310,6 +310,16 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
   <img src="documentation/final_views/feature_paginated_mobile.png">
 </details> 
 
+<details open>
+  <summary>Search function - all users (laptop)</summary>
+  <img src="documentation/final_views/features_search_laptop.png">
+</details> 
+
+<details open>
+  <summary>Search function - all users (mobile)</summary>
+  <img src="documentation/final_views/feature_search_mobile.jpeg">
+</details>
+
 **Blog Post**
 
 <details open>
