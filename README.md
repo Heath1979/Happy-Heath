@@ -253,8 +253,13 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 <details open>
   <summary>Header & Navigation - all users (laptop)</summary>
-  <img src="documentation/final_views/feature_header_laptop.png">
+  <img src="documentation/final_views/feature_header_ur_laptop.png">
 </details>  
+
+<details open>
+  <summary>Header & Navigation - registered users (laptop)</summary>
+  <img src="documentation/final_views/feature_header_laptop.png">
+</details> 
 
 <details open>
   <summary>Header & Navigation - all users (mobile)</summary>
@@ -284,20 +289,25 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 </details> 
 
 <details open>
-  <summary>About page (contact us)- all users (laptop)</summary>
+  <summary>About page (contact us) - all users (laptop)</summary>
   <img src="documentation/final_views/features_contact_laptop.png">
 </details> 
 
 <details open>
-  <summary>About page (contact us)- all users (mobile)</summary>
+  <summary>About page (contact us) - all users (mobile)</summary>
   <img src="documentation/final_views/feature_contact_mobile.png">
 </details> 
 
 **Paginated Posts**
 
 <details open>
-  <summary>Paginated posts - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Paginated posts - all users (laptop)</summary>
+  <img src="documentation/final_views/features_paginated_laptop.png">
+</details> 
+
+<details open>
+  <summary>Paginated posts - all users (mobile)</summary>
+  <img src="documentation/final_views/feature_paginated_mobile.png">
 </details> 
 
 **Blog Post**
