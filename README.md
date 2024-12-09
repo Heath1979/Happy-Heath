@@ -268,7 +268,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 <details open>
   <summary>Footer - all users (mobile)</summary>
-  <img src="documentation/final_views">
+  <img src="documentation/final_views/feature_footer_mobile.jpeg">
 </details>
 
 **About Page**
@@ -280,7 +280,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 <details open>
   <summary>About page - all users (mobile)</summary>
-  <img src="documentation/final_views">
+  <img src="documentation/final_views/feature_about_mobile.png">
 </details> 
 
 <details open>
@@ -290,7 +290,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 
 <details open>
   <summary>About page (contact us)- all users (mobile)</summary>
-  <img src="documentation/final_views">
+  <img src="documentation/final_views/feature_contact_mobile.png">
 </details> 
 
 **Paginated Posts**
