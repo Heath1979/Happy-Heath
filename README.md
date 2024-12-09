@@ -323,8 +323,23 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Blog Post**
 
 <details open>
-  <summary>Paginated posts - all users</summary>
-  <img src="documentation/final_views/">
+  <summary>Individual posts - all users (laptop)</summary>
+  <img src="documentation/final_views/feature_unreg_blogpost_laptop.png">
+</details>
+
+<details open>
+  <summary>Individual posts - all users (mobile)</summary>
+  <img src="documentation/final_views/feature_ur_blogpost_mobile.png">
+</details>
+
+<details open>
+  <summary>Individual posts - author (laptop)</summary>
+  <img src="documentation/final_views/feature_reg_blogpost_laptop.png">
+</details>
+
+<details open>
+  <summary>Individual posts - author (mobile)</summary>
+  <img src="documentation/final_views/feature_reg_blogpost_mobile.png">
 </details>
 
 **Comments**
