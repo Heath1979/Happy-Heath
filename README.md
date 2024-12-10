@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Happy Heath is a blog website showcasing local businesses and the Site Admins experience of them. This website has been developed as part of the Code Institute’s Full-Stack Developer Bootcamp course as my assessed project - focusing on a Django framework, Database manipulation, and CRUD functionality. This project is for educational purposes only.
+Happy Heath is a website that aims to allow users to blogs about local businesses in a manner that provides a showcase for the,. This website has been developed as part of the Code Institute’s Full-Stack Developer Bootcamp course as my assessed project - focusing on a Django framework, Database manipulation, and CRUD functionality. This project is for educational purposes only.
 
 View live site here : [Happy Heath](https://happy-heath-3daa657fbb51.herokuapp.com/)  
   
@@ -53,7 +53,6 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
   - [Content References](#content-references)
   - [Media Refernces](#media-references)
   - [Code](#code)
-  - [Media](#media)
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
@@ -64,7 +63,7 @@ Happy Heath is a blog site about experiences with local businesses. Users are in
 - Create their own posts
 - Interact with reviews through the comments section
 
-Happy Heath is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to create a space where people can read about local businesses and comment on their own experiences. Many small businesses can often only be found through social media business pages and rely on word of mouth to build up business. The aim of the site is to support these businesses and drive customers to them where possible via positive blog posts. Any posts that have a critique of a business should still provide some positivity and hopefully just be to highlight a fixable negative. Happy Heath aims to provide a starting point for people to discuss and promote local businesses. In future developments I would like to invite local businesses the opportunity to promote themselves and add the functionality for users to search for businesses by type. I would like to add an events page for specific calendar events.
+Happy Heath is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to create a space where users can create enagaging blogs about local businesses for people to read and provide comments about their own experiences. Many small businesses can often only be found through social media business pages and rely on word of mouth to build up business. The aim of the site is to support these businesses and drive customers to them where possible via positive blog posts. Any posts that have a critique of a business should still provide some positivity and hopefully just be to highlight a fixable negative. Any user created blogs posts are to be checked by admin to ensure they meet site guidelines before being published. In future developments I would like to add an Events page to allow for community leaders to promote upcoming community events.
 
 # UX - User Experience
 
@@ -498,7 +497,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 - Blasamiq for design planning and wireframes.
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
-- [Heroku](https://www.heroku.com) was used to host the FreeFido application.
+- [Heroku](https://www.heroku.com) was used to host the Happy Heath application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
 - PostgreSQL database required to collect and recall users data supplied by the Code Institute.
 
@@ -667,4 +666,4 @@ The following sites complemented my learning for this project alongside the [Cod
 - To my wonderful partner Jolene who is the inspiration behind everything that I do. I think she may deserve that trip to Katies in Fleetwood.
 - Finally I would like to acknowledge the part of John Feeney as an inspiration behind this project. He coined the phrase 'Happy Heath or a Grumpy Croasdale' and its only through the example of his life that I always strive to be a 'Happy Heath'.
 
-![John and I](documentation/final_views/john-and_I.png)
+![John and I](documentation/final_views/john_and_I.png)
