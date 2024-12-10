@@ -1,6 +1,6 @@
 # Happy Heath
 
-![Happy Heath landing page](documentation/final_views/landing_page.png)
+![Happy Heath landing page](documentation/final_views/responsive_screenshot.png)
 
 ## Introduction
 
