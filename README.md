@@ -81,14 +81,14 @@ In terms of Font style I opted to stay with the standard Ariel due to its famili
  
 ## Strategy Plane
 
-The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. Usres would also be able to create their own posts to further expand site content. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
+The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. Users would also be able to create their own posts to further expand site content. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
 
 ### Site Goals
 
 - Create an environment where people could rate and discuss local businesses.
 - Easy UI for quick fulfilment of feature CRUD functionalities.
 - UX remain the same whether on mobile, tablet or desktop
-- Scalable idea, for addition of future features that would allow for business owners to promote themselves.
+- Scalable idea, for addition of future features that would allow for comunities to promote loacl events.
 
 ## Agile Methodologies - Project Management
 
@@ -131,12 +131,13 @@ User stories and features recorded and managed on [GitHub Projects](https://gith
 
 ## Scope Plane
 
-As this would be a dual learning/building project using technologies that were new to me, such as Django, SQL, Bootstrap and Cloudinary, I was cautious to maintain consistent control over the scope of the project and not let my idea grow too big. I needed to lockdown my project features early on into manageable blocks so as not to lose track of the MVP. Following Agile Planning Methodologies, I added my User Stories as issues on my [GitHub Projects](https://github.com/users/Heath1979/projects/4) to keep the flow of the project in check.
+As this would be a dual learning/building project using technologies that were new to me, such as Django, SQL, Bootstrap and Cloudinary, I was cautious to maintain consistent control over the scope of the project and not let my idea grow too big. I needed to lockdown my project features down early early so as not to lose track of the MVP. Following Agile Planning Methodologies, I added my User Stories as issues on my [GitHub Projects](https://github.com/users/Heath1979/projects/4) to keep the flow of the project in check.
 
 Essential features of my project were:
 - An accessible website that fulfils user needs
 - Responsive website for users of mobile, tablet and desktop devices
 - User Authentication
+- Post creation feature
 - Comment feature with full CRUD functionality
 - About me details to inform the user
 
@@ -150,7 +151,7 @@ From initial concept through to finished product I opted to use standard navigat
 
 ### Wireframes
 
-The wireframes for Happy Heath were made using Balsamiq. I was sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for the Blog and About pages as all login and registration forms would be created by Allauth.
+The wireframes for Happy Heath were made using Balsamiq. I was sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for the Home, About, Paginated Posts, and Individual Post pages as all login and registration forms would be created by Allauth.
 
 **Mobile and Desktop views for:**
  
