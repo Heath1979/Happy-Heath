@@ -205,6 +205,7 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 | 8 | User could not add a new location when creating a post | Yes | Issue with initial modal set ups for location and category. Both amended and AddPost form amended to allow for the changes | 2d3cb31 |
 | 9 | Search function returning user to the home page | Yes | When a new home page was added the return URL in the HTML function was not updated to accommodate the new page. Testing raised the error and code amended | dc6eea6 |
 | 10 | Add content section and Add/Edit post not responsive to smaller screensizes | Yes | Removed Summernote widget. Further reading required yo unsderstand how to make a widget responsive | 9ad4475 |
+| 11 | If a user leaves an empty URL field when creating a post it adds a link to a blog post that redirects a user back to the blog post | Yes | Set Post model URLFields to blank=False to ensure that a user can not leave the URL field empty and updated the PostForm label to prompt a user | 2a2c368 |
 
 ### Known bugs
 
