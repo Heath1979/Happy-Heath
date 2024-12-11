@@ -523,6 +523,7 @@ Further information is available in the [requirements.txt file](rquirements.txt)
 - [LogoDesign](https://logodesign.ai/) for generating brand logo to be used as the Favicon.
 - [Favicon](https://favicon.io/) to create favicon.
 - [Image resizer](https://imageresizer.com/) to resize avatar images to thumbnails.
+- [Datacamp](https://www.datacamp.com/) for information on breaking down strings in pythn so that they PEP 8 compliant.
 
 # Testing
 
