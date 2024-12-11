@@ -53,6 +53,7 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
   - [Content References](#content-references)
   - [Media Refernces](#media-references)
   - [Code](#code)
+  - [Notes](#notes)
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
@@ -88,7 +89,7 @@ The project goal was to build a simple website showcasing users experiences with
 - Create an environment where people could rate and discuss local businesses.
 - Easy UI for quick fulfilment of feature CRUD functionalities.
 - UX remain the same whether on mobile, tablet or desktop
-- Scalable idea, for addition of future features that would allow for comunities to promote loacl events.
+- Scalable idea, for addition of future features that would allow for comunities to promote local events.
 
 ## Agile Methodologies - Project Management
 
@@ -661,6 +662,10 @@ The following sites complemented my learning for this project alongside the [Cod
 - [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
 - [KenBro Tech](https://www.youtube.com/@KenBroTech) for tutorials on creating a search function.
 - [Dee Mc](https://www.youtube.com/@IonaFrisbee) for easy to follow Django walkthrough.
+
+### **Notes**
+
+With reference to the Comment model I have set the approved status to True in order to provide a more dynamic experience for the site user. It should be noted that code is in plave in the post_detail.html that will allow for the approved status to be changed to false so that any comments will have to be approved before being posted. In part this could be utilised for specific groups who show a track record of making comments that do not align with the values promoted by Happy Heath.
 
 ## Acknowledgements
 
