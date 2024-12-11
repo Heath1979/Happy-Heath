@@ -353,12 +353,12 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Add Post**
 
 <details open>
-  <summary>Add posts - registered user (laptop)</summary>
+  <summary>Add post - registered user (laptop)</summary>
   <img src="documentation/final_views/feature_addpost_laptop.png">
  </details> 
 
 <details open>
-  <summary>Add posts - registered user (mobile)</summary>
+  <summary>Add post - registered user (mobile)</summary>
   <img src="documentation/final_views/feature_addpost_mobile.png">
  </details> 
 
