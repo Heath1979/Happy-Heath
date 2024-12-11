@@ -22,7 +22,9 @@ def about_me(request):
         if contact_form.is_valid():
             contact_form.save()
             messages.add_message(request, messages.SUCCESS,
-                                 "Thank you for your message.")
+                                 "Thank you for your message. \
+                                 One of the team will respond \
+                                 to you shortly.")
 
     about = About.objects.all().order_by('-updated_on').first()
     contact_form = ContactForm()
