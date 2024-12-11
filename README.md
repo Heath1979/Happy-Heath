@@ -546,9 +546,12 @@ To begin this project from scratch, you must first create a new GitHub repositor
 
 1. Install Django and supporting libraries: 
    
-- ```pip3 install 'django4' gunicorn```
-- ```pip3 install dj_database_url psycopg2```
-- ```pip3 install dj3-cloudinary-storage```  
+- ```pip3 install Django~=4.2.1```
+- ```pip3 install gunicorn~=20.1```
+- ```pip3 install dj-database-url~=0.5 psycopg2```
+- ```pip3 install dj3-cloudinary-storage~=.0.6```
+- ```pip3 install urllib3~=1.26.15```
+- ```pip3 install whitenoise~=5.3.0```
   
 2. Once you have installed any relevant dependencies or libraries, such as the ones listed above, it is important to create a **requirements.txt** file and add all installed libraries to it with the ```pip3 freeze --local > requirements.txt``` command in the terminal.  
 3. Create a new Django project in the terminal ```django-admin startproject config .```
