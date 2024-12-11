@@ -35,9 +35,13 @@ class PostForm(forms.ModelForm):
             "rating": "Happy Heath or Grumpy Croasdale?",
             "content": "Write your Blog.",
             "excerpt": "Your experience in one sentence.",
-            "social_links": "Facebook page",
-            "web_links": "Business Website",
-            "video_links": "Supporting YouTube channel or video.",
+            "social_links": "Facebook page. Please use example \
+                placeholder if no supporting link available.",
+            "web_links": "Business Website. Please use example \
+                placeholder if no supporting link available.",
+            "video_links": "Supporting YouTube channel or video. \
+                Please use example placeholder if no supporting \
+                link available.",
         }
     """
     credit to perplexity AI

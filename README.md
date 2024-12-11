@@ -253,7 +253,7 @@ Users are able to Create, Read, Update and Delete their shared information on Ha
 **Header/Navigation & Footer**
 
 <details open>
-  <summary>Header & Navigation - unregisterd users (laptop)</summary>
+  <summary>Header & Navigation - unregistered users (laptop)</summary>
   <img src="documentation/final_views/feature_header_ur_laptop.png">
 </details>  
 
