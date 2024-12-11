@@ -1,8 +1,8 @@
 from django import forms
-from .models import CollaborateRequest
+from .models import ContactUs
 
 
-class CollaborateForm(forms.ModelForm):
+class ContactForm(forms.ModelForm):
     """
     Form for handling collaboration/contact requests.
     """
@@ -10,5 +10,5 @@ class CollaborateForm(forms.ModelForm):
         """
         Specifies the model to be used and the included fields.
         """
-        model = CollaborateRequest
+        model = ContactUs
         fields = ('name', 'email', 'message')

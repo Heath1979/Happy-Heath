@@ -13,11 +13,14 @@ class About(models.Model):
     content = models.TextField()
     updated_on = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name_plural = "about"
+
     def __str__(self):
         return self.title
 
 
-class CollaborateRequest(models.Model):
+class ContactUs(models.Model):
     """
     stores instances where a user has filled out the Contact Form
     """
@@ -26,5 +29,8 @@ class CollaborateRequest(models.Model):
     message = models.TextField()
     read = models.BooleanField(default=False)
 
+    class Meta:
+        verbose_name_plural = "contact us"
+
     def __str__(self):
-        return f"Collaboration request from {self.name}"
+        return f"Message sent by {self.name}"
