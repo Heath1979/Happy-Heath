@@ -668,10 +668,17 @@ The following sites complemented my learning for this project alongside the [Cod
 - [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
 - [KenBro Tech](https://www.youtube.com/@KenBroTech) for tutorials on creating a search function.
 - [Dee Mc](https://www.youtube.com/@IonaFrisbee) for easy to follow Django walkthrough.
+- [Stack Overflow](https://stackoverflow.com/) for help with ordering the Category model.
 
 ### **Notes**
 
 With reference to the Comment model I have set the approved status to True in order to provide a more dynamic experience for the site user. It should be noted that code is in plave in the post_detail.html that will allow for the approved status to be changed to false so that any comments will have to be approved before being posted. In part this could be utilised for specific groups who show a track record of making comments that do not align with the values promoted by Happy Heath.
+
+### **Final Thoughts**
+
+As the time nears for this project to be submitted I feel as though it is only right that I take some time to reflect on this experience and think about lessons learnt. The past three weeks have been intense but also enjoyable, and in some respects I will be sad to put Happy Heath away for a while. I am happy with what I have created for this project and I believe serves as a representation of where I am in terms of my journey into full stack software development. I understand that so far I have only receieved a brief introduction into the core concepts of software development and the reality is that my learning has only just started with this project. 
+Probably the most important lesson I have learnt is the importance of prepartion before starting a project. I initially believed I had prepared quite well and as such has a lot of early success with this project. Problems only really started developing when I looked to add the functionality for a user to be able to create a post on the front-end. Having the Location model as a Foreign Key to the Post model meant having to overly embelish the forms and views in order to get required functionality. Reflecting back I know that if I had just added the Location model as a field in the Post model it would have reduced the complexity of the code in the forms and views for the Post model significantly. 
+Taking the time to reflect on this project and the lessons learnt I believe will serve me well in creating future projects and I am eager to now explore what more I can achieve with the skills I have gained thus far.
 
 ## Acknowledgements
 
