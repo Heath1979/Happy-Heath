@@ -649,13 +649,16 @@ To start the deployment process , please follow the below steps:
 
 All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
 - [Facebook](https://www.facebook.com) for Facebook business profiles.
-- [YouTube](https://www.youtube.com) for supporting videos on the advertised businesses. Credit to Visit Fylde Coast, 
+- [YouTube](https://www.youtube.com) for supporting videos on the advertised businesses. 
+- [ChatGPT](https://chatgpt.com/) for creating content for posts written by Heath1979.
 
 ### **Media References**
 - [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
 - [Notionavenue](https://www.notionavenue.co/) for hex color code for comments delete button.
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
 - [AWeber](https://blog.aweber.com/) for advice on fonts used for a blog site.
+- [FontAwesome](https://fontawesome.com/) for social media icons used in the footer.
+- [LogoDesign](https://logodesign.ai/) for generating the Happy Heath logo.
 
 ### **Code**
 
